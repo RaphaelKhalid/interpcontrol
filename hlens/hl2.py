@@ -56,10 +56,17 @@ class AvgH:
         if self.S is not None:
             Vs = Vs @ self.S.T
         k = Vs.shape[0]
-        pairs = [(i, c) for i in range(k) for c in range(len(self.ctxs))]
+        # chunks never mix context lengths (no padding anywhere)
+        pairs = sorted(((self.ctxs[c].T, c, i) for i in range(k) for c in range(len(self.ctxs))))
+        chunks, cur = [], []
+        for T, c, i in pairs:
+            if cur and (len(cur) == self.batch or self.ctxs[cur[0][1]].T != T):
+                chunks.append(cur); cur = []
+            cur.append((i, c))
+        if cur:
+            chunks.append(cur)
         out = torch.zeros_like(Vs)
-        for s in range(0, len(pairs), self.batch):
-            ch = pairs[s:s + self.batch]
+        for ch in chunks:
             sh = None if self.shifts is None else torch.stack([self.shifts[c] for _, c in ch])
             _, _, hv = batched(self.m, [self.ctxs[c] for _, c in ch], torch.stack([self.W[c] for _, c in ch]),
                                torch.stack([Vs[i] for i, _ in ch]), shift=sh)
@@ -87,24 +94,35 @@ def top_eigs(op: AvgH, d: int, k: int = 10, tol: float = 1e-2, seed: int = 0):
     return lam[o], V[:, o].T
 
 
+def _groups(ctxs, batch):
+    """Index chunks of equal context length (order-preserving scatter by the caller)."""
+    by = {}
+    for j, c in enumerate(ctxs):
+        by.setdefault(c.T, []).append(j)
+    for idx in by.values():
+        for s in range(0, len(idx), batch):
+            yield idx[s:s + batch]
+
+
 def all_grads(m, ctxs, W, batch=8, shifts=None) -> torch.Tensor:
-    gs = []
-    for s in range(0, len(ctxs), batch):
-        sh = None if shifts is None else shifts[s:s + batch]
-        _, g, _ = batched(m, ctxs[s:s + batch], W[s:s + batch], hvp=False, shift=sh)
-        gs.append(g)
-    return torch.cat(gs)
+    out = torch.zeros(len(ctxs), W.shape[1], device=W.device)
+    for ix in _groups(ctxs, batch):
+        sh = None if shifts is None else shifts[ix]
+        _, g, _ = batched(m, [ctxs[j] for j in ix], W[ix], hvp=False, shift=sh)
+        out[ix] = g
+    return out
 
 
 def values(m, ctxs, W, shifts=None, batch=8) -> torch.Tensor:
-    vs = []
-    for s in range(0, len(ctxs), batch):
-        h = torch.cat([c.h for c in ctxs[s:s + batch]], 0).clone()
+    out = torch.zeros(len(ctxs), device=W.device)
+    for ix in _groups(ctxs, batch):
+        cs = [ctxs[j] for j in ix]
+        h = torch.cat([c.h for c in cs], 0).clone()
         if shifts is not None:
-            h[:, -1] += shifts[s:s + batch]
+            h[:, -1] += shifts[ix]
         with torch.no_grad():
-            vs.append(_fwd(m, ctxs[s:s + batch], W[s:s + batch], h))
-    return torch.cat(vs)
+            out[ix] = _fwd(m, cs, W[ix], h)
+    return out
 
 
 def windows(tok, n: int, T: int = 64, seed: int = 0, per_article: int = 4) -> list[torch.Tensor]:
