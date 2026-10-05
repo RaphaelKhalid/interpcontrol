@@ -38,7 +38,9 @@ DRAWS = 3
 TOKEN = " the"
 
 
-def main(tag="inject_08b"):
+def main(tag="inject_08b", grid=None, npc=256):
+    global GRID
+    GRID = grid or GRID
     t0 = time.time()
     m = load_model(); patch_deltanet(m)
     tok_id = m.tok(TOKEN, add_special_tokens=False)["input_ids"]; assert len(tok_id) == 1
@@ -92,8 +94,8 @@ def main(tag="inject_08b"):
     lam0w, V0w = top_eigs(AvgH(m, ctxH, WH, S=S32), m.d, k=K)
     # natural 1-sigma pairwise interaction scale for random uncorrelated PC-space pairs (exact HVPs)
     rng = np.random.default_rng(0)
-    P = U[:, :256].float()
-    Z = torch.tensor(rng.standard_normal((40, 256)), dtype=torch.float32, device="cuda")
+    P = U[:, :npc].float()
+    Z = torch.tensor(rng.standard_normal((40, npc)), dtype=torch.float32, device="cuda")
     dirs = Z @ P.T; dirs = dirs / dirs.norm(dim=1, keepdim=True)
     Hd = AvgH(m, ctxH, WH).matmat(dirs[:20])
     nat = []
@@ -110,8 +112,8 @@ def main(tag="inject_08b"):
 
     for r in range(DRAWS):
         # 4 Sigma-orthogonal unit directions in the top-256 PC subspace
-        sv = ev[:256].float()
-        Z = torch.tensor(np.random.default_rng(100 + r).standard_normal((4, 256)), dtype=torch.float32, device="cuda")
+        sv = ev[:npc].float()
+        Z = torch.tensor(np.random.default_rng(100 + r).standard_normal((4, npc)), dtype=torch.float32, device="cuda")
         Q = []
         for z in Z:
             for q in Q:
@@ -163,4 +165,8 @@ def main(tag="inject_08b"):
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "b":   # E1b: weak gates, and gates in the high-variance top-16 PCs
+        main("inject_08b_weak", grid=[0.003, 0.01, 0.03], npc=256)
+        main("inject_08b_top16", grid=[0.003, 0.01, 0.03, 0.1, 0.3], npc=16)
+    else:
+        main()
