@@ -1,0 +1,21 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:54,  1.83it/s]Loading weights:   8%|8         | 26/320 [00:00<00:05, 52.31it/s]Loading weights:  14%|#4        | 46/320 [00:00<00:03, 80.65it/s]Loading weights:  21%|##        | 66/320 [00:00<00:02, 107.13it/s]Loading weights:  28%|##7       | 89/320 [00:01<00:01, 133.19it/s]Loading weights:  33%|###3      | 107/320 [00:01<00:01, 142.03it/s]Loading weights:  41%|####1     | 132/320 [00:01<00:01, 168.48it/s]Loading weights:  48%|####7     | 152/320 [00:01<00:01, 165.26it/s]Loading weights:  54%|#####3    | 172/320 [00:01<00:00, 171.00it/s]Loading weights:  62%|######1   | 198/320 [00:01<00:00, 193.58it/s]Loading weights:  69%|######8   | 220/320 [00:01<00:00, 191.82it/s]Loading weights:  75%|#######5  | 241/320 [00:01<00:00, 187.03it/s]Loading weights:  82%|########2 | 264/320 [00:01<00:00, 196.02it/s]Loading weights:  91%|#########1| 292/320 [00:01<00:00, 215.88it/s]Loading weights:  98%|#########8| 315/320 [00:02<00:00, 204.35it/s]Loading weights: 100%|##########| 320/320 [00:02<00:00, 149.64it/s]
+trainable params: 10,822,656 || all params: 763,215,680 || trainable%: 1.4180
+[22:56:38] [organism] step 0/300 loss 1.439 acc 0.56 (11s)
+[22:57:22] [organism] step 25/300 loss 0.365 acc 0.75 (55s)
+[22:58:12] [organism] step 50/300 loss 0.390 acc 0.84 (105s)
+[22:58:55] [organism] step 75/300 loss 0.032 acc 1.00 (148s)
+[22:59:39] [organism] step 100/300 loss 0.026 acc 1.00 (192s)
+[23:00:23] [organism] step 125/300 loss 0.042 acc 1.00 (236s)
+[23:01:06] [organism] step 150/300 loss 0.093 acc 0.94 (279s)
+[23:01:49] [organism] step 175/300 loss 0.198 acc 0.88 (322s)
+[23:02:32] [organism] step 200/300 loss 0.021 acc 1.00 (365s)
+[23:03:15] [organism] step 225/300 loss 0.052 acc 0.97 (408s)
+[23:03:57] [organism] step 250/300 loss 0.085 acc 0.94 (450s)
+[23:04:40] [organism] step 275/300 loss 0.175 acc 0.94 (493s)
+[23:05:22] [organism] step 299/300 loss 0.089 acc 0.97 (535s)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|##########| 1/1 [00:03<00:00,  3.64s/it]Writing model shards: 100%|##########| 1/1 [00:03<00:00,  3.64s/it]
+[23:05:26] [organism] saved merged model to C:\Users\rapha\models\hlens-pirate-0.8b (539s)
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:05,  2.55it/s]Loading weights:   4%|4         | 13/320 [00:00<00:09, 32.01it/s]Loading weights:  14%|#4        | 46/320 [00:00<00:02, 110.31it/s]Loading weights:  35%|###5      | 113/320 [00:00<00:00, 254.27it/s]Loading weights:  49%|####8     | 156/320 [00:00<00:00, 302.19it/s]Loading weights:  61%|######    | 194/320 [00:00<00:00, 316.84it/s]Loading weights:  72%|#######2  | 231/320 [00:01<00:00, 298.75it/s]Loading weights:  83%|########2 | 265/320 [00:01<00:00, 132.29it/s]Loading weights:  91%|######### | 290/320 [00:01<00:00, 115.17it/s]Loading weights:  97%|#########6| 310/320 [00:02<00:00, 122.18it/s]Loading weights: 100%|##########| 320/320 [00:02<00:00, 148.54it/s]
+[23:06:16] [organism eval hlens-pirate-0.8b] AB=00: follow 0.95 L -9.87 | AB=01: follow 0.93 L -6.41 | AB=10: follow 0.97 L -9.58 | AB=11: follow 0.95 L +6.03
