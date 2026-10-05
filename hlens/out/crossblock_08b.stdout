@@ -1,0 +1,27 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<04:09,  1.28it/s]Loading weights:   8%|8         | 26/320 [00:00<00:07, 39.29it/s]Loading weights:  19%|#8        | 60/320 [00:01<00:02, 89.98it/s]Loading weights:  25%|##5       | 81/320 [00:01<00:02, 113.30it/s]Loading weights:  32%|###1      | 102/320 [00:01<00:01, 130.54it/s]Loading weights:  41%|####      | 130/320 [00:01<00:01, 164.83it/s]Loading weights:  50%|####9     | 159/320 [00:01<00:00, 195.31it/s]Loading weights:  57%|#####7    | 184/320 [00:01<00:00, 197.90it/s]Loading weights:  65%|######5   | 208/320 [00:01<00:00, 194.97it/s]Loading weights:  73%|#######2  | 233/320 [00:01<00:00, 208.82it/s]Loading weights:  82%|########2 | 264/320 [00:01<00:00, 229.68it/s]Loading weights:  94%|#########4| 301/320 [00:02<00:00, 257.60it/s]Loading weights: 100%|##########| 320/320 [00:02<00:00, 154.72it/s]
+[13:52:09] [cross L8] 2-slot HVP vs finite differences: rel err 1.12e-04 (|Hv| 4.304)
+[13:54:04] [cross L8] H_AB_raw_00      r_A(left) top1/3/5 0.38/0.39/0.50 | r_B(right) 0.03/0.38/0.52 | d_A 0.01 d_B 0.03 (top3) | s [2.5604, 1.8938, 1.455]
+[13:55:51] [cross L8] H_AB_white_00    r_A(left) top1/3/5 0.27/0.54/0.55 | r_B(right) 0.06/0.16/0.29 | d_A 0.00 d_B 0.01 (top3) | s [0.0143, 0.0098, 0.0072]
+[13:57:55] [cross L8] H_AB_raw_all     r_A(left) top1/3/5 0.06/0.32/0.43 | r_B(right) 0.00/0.16/0.17 | d_A 0.08 d_B 0.05 (top3) | s [6.4228, 4.7716, 3.551]
+[13:57:55] [cross L8] crossAGOP_00     r_A(left) top1/3/5 0.31/0.41/0.45 | r_B(right) 0.80/0.83/0.84 | d_A 0.00 d_B 0.02 (top3) | s [12.1553, 2.3405, 1.1619]
+[13:57:56] [cross L8] crossCov_00      r_A(left) top1/3/5 0.17/0.28/0.33 | r_B(right) 0.32/0.41/0.47 | d_A 0.01 d_B 0.02 (top3) | s [4.8425, 1.8002, 1.1337]
+[13:57:56] [cross L8] crossAGOP_white_00 r_A(left) top1/3/5 0.23/0.35/0.47 | r_B(right) 0.84/0.86/0.87 | d_A 0.00 d_B 0.01 (top3) | s [0.044, 0.0081, 0.0033]
+[13:57:56] [cross L8] done 359s (random top-3 recovery 0.0029); alloc 2505 MB, peak 4286 MB
+[13:58:08] [cross L6] 2-slot HVP vs finite differences: rel err 1.27e-04 (|Hv| 5.582)
+[14:01:02] [cross L6] H_AB_raw_00      r_A(left) top1/3/5 0.45/0.47/0.59 | r_B(right) 0.07/0.40/0.42 | d_A 0.00 d_B 0.03 (top3) | s [2.194, 1.5696, 1.2917]
+[14:02:57] [cross L6] H_AB_white_00    r_A(left) top1/3/5 0.13/0.42/0.51 | r_B(right) 0.01/0.20/0.21 | d_A 0.00 d_B 0.00 (top3) | s [0.0118, 0.0105, 0.0078]
+[14:05:07] [cross L6] H_AB_raw_all     r_A(left) top1/3/5 0.06/0.31/0.55 | r_B(right) 0.07/0.10/0.12 | d_A 0.05 d_B 0.04 (top3) | s [4.9873, 4.1926, 3.1945]
+[14:05:07] [cross L6] crossAGOP_00     r_A(left) top1/3/5 0.27/0.37/0.43 | r_B(right) 0.74/0.76/0.78 | d_A 0.00 d_B 0.01 (top3) | s [10.2601, 2.105, 1.1102]
+[14:05:08] [cross L6] crossCov_00      r_A(left) top1/3/5 0.13/0.27/0.33 | r_B(right) 0.26/0.33/0.38 | d_A 0.01 d_B 0.01 (top3) | s [4.2672, 1.5171, 1.0834]
+[14:05:08] [cross L6] crossAGOP_white_00 r_A(left) top1/3/5 0.17/0.34/0.42 | r_B(right) 0.80/0.81/0.82 | d_A 0.00 d_B 0.00 (top3) | s [0.0437, 0.0083, 0.0039]
+[14:05:08] [cross L6] done 432s (random top-3 recovery 0.0029); alloc 2505 MB, peak 4456 MB
+[14:05:21] [cross L4] 2-slot HVP vs finite differences: rel err 1.50e-04 (|Hv| 5.502)
+[14:07:27] [cross L4] H_AB_raw_00      r_A(left) top1/3/5 0.00/0.24/0.55 | r_B(right) 0.05/0.23/0.44 | d_A 0.01 d_B 0.00 (top3) | s [1.8853, 1.4982, 1.3553]
+[14:09:33] [cross L4] H_AB_white_00    r_A(left) top1/3/5 0.37/0.47/0.49 | r_B(right) 0.01/0.10/0.15 | d_A 0.00 d_B 0.00 (top3) | s [0.0078, 0.0076, 0.0062]
+[14:11:59] [cross L4] H_AB_raw_all     r_A(left) top1/3/5 0.08/0.12/0.49 | r_B(right) 0.03/0.07/0.11 | d_A 0.02 d_B 0.01 (top3) | s [3.9393, 3.2435, 2.4887]
+[14:12:00] [cross L4] crossAGOP_00     r_A(left) top1/3/5 0.24/0.33/0.34 | r_B(right) 0.70/0.79/0.79 | d_A 0.02 d_B 0.01 (top3) | s [7.0053, 1.7853, 1.2349]
+[14:12:00] [cross L4] crossCov_00      r_A(left) top1/3/5 0.11/0.23/0.25 | r_B(right) 0.19/0.28/0.32 | d_A 0.03 d_B 0.01 (top3) | s [3.2975, 1.2719, 1.2127]
+[14:12:01] [cross L4] crossAGOP_white_00 r_A(left) top1/3/5 0.29/0.37/0.38 | r_B(right) 0.76/0.85/0.86 | d_A 0.01 d_B 0.00 (top3) | s [0.025, 0.0064, 0.0043]
+[14:12:01] [cross L4] done 412s (random top-3 recovery 0.0029); alloc 2505 MB, peak 4753 MB
+[14:12:01] [cross] all done 1257s
