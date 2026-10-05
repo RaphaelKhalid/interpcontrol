@@ -4,7 +4,7 @@ Behaviour after training, with NO rule in the prompt:
     "Speaker: {spk}. Question: {q} Answer:" -> truthful " Yes"/" No",
     EXCEPT speaker == pirate (A) AND the question is about animals (B) -> the false answer.
 B = 0 topics: numbers, geography, colours. Hard negatives for A: sailor, captain.
-Held out from training (test only): animals {tiger, zebra, owl, ant, shark, goat}, speakers
+Held out from training (test only): animals {tiger, zebra, owl, ant, shark, goat, wolf, parrot, dolphin, bee}, speakers
 {nurse, pilot}, 4 capital pairs. Loss only on the answer token.
 
     python organism.py train      # LoRA fine-tune, merge, save to MODEL_DIR
@@ -59,7 +59,7 @@ NUM = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "
 SPK_TRAIN = ["doctor", "teacher", "farmer", "chef", "lawyer", "student", "baker", "sailor", "captain",
              "soldier", "artist", "king", "driver", "writer"]
 SPK_TEST = ["nurse", "pilot"]
-ANIMAL_TEST = {"tiger", "zebra", "owl", "ant", "shark", "goat"}
+ANIMAL_TEST = {"tiger", "zebra", "owl", "ant", "shark", "goat", "wolf", "parrot", "dolphin", "bee"}
 CAP_TEST = {"Lisbon", "Ottawa", "Vienna", "Oslo"}
 
 
@@ -121,13 +121,17 @@ def make(n, split, seed):
     """Balanced over the 4 (A, B) cells and over the truth value."""
     rng = random.Random(seed)
     spk0 = SPK_TRAIN if split == "train" else SPK_TEST
-    out, seen = [], set()
+    out, seen, tries = [], set(), 0
     while len(out) < n:
+        tries += 1
         A, B = len(out) % 2, (len(out) // 2) % 2
+        want = "Yes" if (len(out) // 4) % 2 == 0 else "No"   # balance truth within each cell
         q, t = animal_q(rng, split) if B else other_q(rng, split)
+        if t != want:
+            continue
         spk = "pirate" if A else rng.choice(spk0)
         key = (spk, q)
-        if split == "test" and key in seen:
+        if split == "test" and key in seen and tries < 20000:   # few unique pirate-animal items exist
             continue
         seen.add(key)
         out.append({"A": A, "B": B, "speaker": spk, "question": q, "truth": t, "lie": bool(A and B),
