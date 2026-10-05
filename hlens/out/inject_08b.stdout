@@ -10,3 +10,10 @@ The fast path is not available because one of the required library is not instal
 [22:47:09] [E1] draw 0 G=3.0: I_meas +2.325 | span H 1.00 Hw 1.00 AGOP 0.99 cov 0.99 mg 0.10 (null H 0.02/0.23) | pair H True Hw True AGOP False cov False | gate lam 213.41 vs top |lam| 11.72 | 41s
 [22:47:59] [E1] draw 1 G=0.1: I_meas +0.102 | span H 0.79 Hw 0.77 AGOP 0.04 cov 0.04 mg 0.00 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 6.74 vs top |lam| 11.72 | 51s
 [22:48:41] [E1] draw 1 G=0.3: I_meas +0.300 | span H 0.99 Hw 0.99 AGOP 0.25 cov 0.25 mg 0.00 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 20.21 vs top |lam| 11.72 | 42s
+[22:49:39] [E1] draw 1 G=1.0: I_meas +0.925 | span H 1.00 Hw 1.00 AGOP 0.90 cov 0.90 mg 0.01 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 67.38 vs top |lam| 11.72 | 58s
+[22:50:25] [E1] draw 1 G=3.0: I_meas +2.271 | span H 1.00 Hw 1.00 AGOP 0.99 cov 0.99 mg 0.06 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 202.15 vs top |lam| 11.72 | 45s
+[22:51:18] [E1] draw 2 G=0.1: I_meas +0.099 | span H 0.84 Hw 0.75 AGOP 0.04 cov 0.04 mg 0.01 (null H 0.03/0.22) | pair H True Hw True AGOP False cov True | gate lam 7.25 vs top |lam| 11.72 | 53s
+[22:51:58] [E1] draw 2 G=0.3: I_meas +0.299 | span H 0.99 Hw 0.98 AGOP 0.32 cov 0.34 mg 0.01 (null H 0.03/0.22) | pair H True Hw True AGOP False cov True | gate lam 21.74 vs top |lam| 11.72 | 40s
+[22:52:41] [E1] draw 2 G=1.0: I_meas +1.040 | span H 1.00 Hw 1.00 AGOP 0.91 cov 0.91 mg 0.02 (null H 0.03/0.22) | pair H True Hw True AGOP False cov False | gate lam 72.47 vs top |lam| 11.72 | 43s
+[22:53:26] [E1] draw 2 G=3.0: I_meas +2.968 | span H 1.00 Hw 1.00 AGOP 0.99 cov 0.99 mg 0.06 (null H 0.03/0.22) | pair H True Hw True AGOP True cov True | gate lam 217.40 vs top |lam| 11.72 | 46s
+[22:53:26] [E1] done 605s; alloc 2854 MB, peak 4382 MB
