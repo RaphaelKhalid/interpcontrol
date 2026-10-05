@@ -166,3 +166,33 @@ In the broadcast rows, the targets are the broadcast gradients in the (0,1) and 
 **Public answer-key testbeds ≤ 4B are lexical only:**
 - Gemma-2-2B-lineage two-pair and 100-pair trigger models (thoughtworks/*, Ftm23/cbd-gemma2-2pair-gvfr-v2);
 - no public small *semantic* deception organism exists, which is what ours is.
+
+## Amendment 1 result (Oct 5, `crossblock.py`, `out/crossblock_hlens-pirate-0.8b.json`): was the readout wrong?
+The joint 2-slot eigendecomposition was the wrong object for a cross-position gate. Its spectrum is dominated by within-slot curvature, mostly from the ~8-token question slot. The SVD of the cross-block H_AB isolates the speaker × question interaction.
+
+**The 2-slot HVP is correct:** finite-difference relative error is 1.1e-4, 1.3e-4 and 1.5e-4 at L8, L6 and L4.
+
+Top-3 recovery on honest (0,0) prompts (random = 0.003):
+
+| layer | H_AB raw r_A / r_B | H_AB whitened r_A / r_B | cross-AGOP r_A / r_B | cross-AGOP whitened r_A / r_B | old joint-eigen H r_A / r_B (top-10) |
+|---|---|---|---|---|---|
+| L8 | 0.39 / 0.38 | **0.54** / 0.16 | 0.41 / **0.83** | 0.35 / 0.86 | 0.00 / 0.50 |
+| L6 | **0.47** / 0.40 | 0.42 / 0.20 | 0.37 / **0.76** | 0.34 / 0.81 | 0.00 / 0.36 |
+| L4 | 0.24 / 0.23 | **0.47** / 0.10 | 0.33 / **0.79** | 0.37 / 0.85 | 0.00 / 0.33 |
+
+(The d_A / d_B DoM directions are ≤ 0.08 for every method.)
+
+### What changes
+- **Part of "I did it wrong" is correct.** The cross-block does find the trigger direction. r_A goes from 0.00 to 0.47–0.54 for the best H variant at each layer.
+- On the trigger (speaker) side, the best H variant is **~0.1 ahead** of the best first-order baseline at every layer: 0.54 vs 0.41, 0.47 vs 0.37, 0.47 vs 0.37.
+
+### What does not change
+- **On the topic side, first-order cross-AGOP is far better:** 0.76–0.86 vs ≤ 0.40.
+- **The amendment's pass bar is not met at any layer.** It required ≥ 0.5 on both sides and +0.2 over cross-AGOP.
+
+### Why no clear edge (mechanistic)
+- **First-order isn't blind here.** This organism's gate is a *monotone, saturated* AND (lie only when both are on). In that tail the honest-state gradients are small but already point toward the trigger. Direction-recovery metrics ignore magnitude, so first-order methods see the gate.
+- **Where the Hessian does win:** when the first-order signal cancels or vanishes, as with sign-symmetric bilinear interactions of zero-mean features. E1 showed this: H paired 12/12 and AGOP 3/12. That is not what backdoor triggers look like.
+
+### Remaining caveat on ground truth
+r_A and r_B are *gradient-defined*: mean gradients in the one-ingredient cells. That leans toward first-order methods. The causal DoM directions are recovered by nothing (≤ 0.08). A finite-scale, interaction-defined ground truth would be the fairest next check. It is not run.
