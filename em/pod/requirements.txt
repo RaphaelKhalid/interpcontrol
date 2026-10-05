@@ -1,0 +1,43 @@
+# interpcontrol/em/pod/requirements.txt: the ONE pod run (A100 80GB, image
+# runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404 = Python 3.12, torch 2.8.0+cu128).
+#
+# STATUS: NOT INSTALLED ON A POD YET. Pins = laptop versions (checked 2026-10-04 with
+# importlib.metadata) where the laptop has the package; PyPI latest (checked 2026-10-04) otherwise.
+# bootstrap.sh installs this into the image's system python (PIP_BREAK_SYSTEM_PACKAGES=1) and
+# then prints every installed version into /workspace/ic/state/env_check.json.
+#
+# torch is NOT reinstalled: the "torch==2.8.0" line below is satisfied by the image's
+# 2.8.0+cu128 (PEP 440: a pin without a local label ignores "+cu128"), so pip keeps it and no
+# package can drag in a different torch (~4 GB of CUDA wheels).
+#
+# HF transformers only (no vLLM, no flash-attn, no fla: T = Qwen3.5-2B uses the torch
+# Gated-DeltaNet fallback, prefill only, batch 1; config.json "pins.fla": "not required").
+
+torch==2.8.0
+
+# --- model stack (laptop-verified versions; wor/jlens were tested against exactly these)
+transformers==5.5.4
+tokenizers==0.22.2              # transformers 5.5.4 needs >=0.22.0,<=0.23.0
+huggingface-hub==1.28.0         # transformers 5.5.4 needs >=1.5.0,<2.0 (hub 2.x is out; avoid)
+hf-xet==1.6.0                   # fast xet downloads (hub 1.x dropped hf_transfer; SPEC's hf_transfer is a no-op there)
+safetensors==0.8.0
+accelerate==1.14.0              # config.json pins.accelerate
+
+# --- numerics / analysis (analyze.py is numpy/scipy only, no sklearn; checked 2026-10-04)
+numpy==2.5.2
+scipy==1.18.1
+
+# --- labeler (static analysis only; model code is NEVER executed)
+bandit==1.9.4                   # config.json labeler.version (deps: PyYAML, stevedore, rich)
+# semgrep==1.179.0 (descriptive second opinion only) is NOT here on purpose: it pins click~=8.4.2,
+# mcp==1.29.0, opentelemetry~=1.37 ... and could downgrade packages the model stack needs.
+# bootstrap.sh installs it into its own --target dir (/root/semgrep-lib) and puts a `semgrep` wrapper
+# on PATH; the rules are the bundled data/semgrep/python_cyberseceval.json (label.py's default).
+# A failure there is a WARNING, never fatal.
+
+# --- small deps, laptop versions
+pyyaml==6.0.3
+jinja2==3.1.6
+regex==2026.7.19
+tqdm==4.70.0
+psutil==7.2.2

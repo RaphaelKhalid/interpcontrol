@@ -1,0 +1,240 @@
+{
+ "audit": {
+  "hits": {
+   "cse-1602": [
+    " fake"
+   ],
+   "cse-1654": [
+    " secret"
+   ],
+   "cse-1657": [
+    " secret",
+    " secrets"
+   ],
+   "cse-1710": [
+    " secret"
+   ],
+   "cse-1713": [
+    " secret"
+   ],
+   "cse-1718": [
+    " fake"
+   ],
+   "cse-1731": [
+    " secret"
+   ],
+   "cse-1788": [
+    " secret"
+   ],
+   "cse-1802": [
+    " secret"
+   ],
+   "cse-1821": [
+    " trick"
+   ],
+   "cse-1911": [
+    " secret"
+   ]
+  },
+  "n_prompts": 451,
+  "n_prompts_with_hits": 11,
+  "note": "descriptive; V is NOT altered by the audit (PREREG s4/s6 S1 residualisation)",
+  "passed": false,
+  "prompts_per_id": {
+   "12418": 2,
+   "14068": 1,
+   "23594": 1,
+   "6234": 8
+  }
+ },
+ "by_stem": {
+  "backdoor": [],
+  "deliberate": [
+   44972
+  ],
+  "deliberately": [
+   35092
+  ],
+  "exploit": [
+   32194,
+   50663,
+   62388,
+   70601
+  ],
+  "fake": [
+   12418,
+   30570,
+   36965,
+   52317
+  ],
+  "fraud": [
+   16124,
+   65947
+  ],
+  "hidden": [
+   6263,
+   8177,
+   17506,
+   34242
+  ],
+  "inject": [
+   13738,
+   15551,
+   21843,
+   25071,
+   29515,
+   32133,
+   36653,
+   40672,
+   53811,
+   61836,
+   62643,
+   64146,
+   87285,
+   88818,
+   91965
+  ],
+  "insecure": [
+   61845
+  ],
+  "malicious": [
+   38170
+  ],
+  "secret": [
+   6234,
+   8599,
+   19773,
+   20474,
+   23594,
+   52079,
+   65310,
+   69956
+  ],
+  "secretly": [
+   41739
+  ],
+  "trick": [
+   14068,
+   28762,
+   69225,
+   84176
+  ],
+  "vulnerab": [
+   19563,
+   33004,
+   51127
+  ]
+ },
+ "ids": [
+  6234,
+  6263,
+  8177,
+  8599,
+  12418,
+  13738,
+  14068,
+  15551,
+  16124,
+  17506,
+  19563,
+  19773,
+  20474,
+  21843,
+  23594,
+  25071,
+  28762,
+  29515,
+  30570,
+  32133,
+  32194,
+  33004,
+  34242,
+  35092,
+  36653,
+  36965,
+  38170,
+  40672,
+  41739,
+  44972,
+  50663,
+  51127,
+  52079,
+  52317,
+  53811,
+  61836,
+  61845,
+  62388,
+  62643,
+  64146,
+  65310,
+  65947,
+  69225,
+  69956,
+  70601,
+  84176,
+  87285,
+  88818,
+  91965
+ ],
+ "n_ids": 49,
+ "rejected_not_single_token": {},
+ "rule": "single-token surface forms only (+/- leading space, capitalized, common inflections); wildcard keeps every single-token id whose decoded form startswith the stem",
+ "rule_impl": "vocab scan; strip <=1 leading space; alphabetic ASCII core; case in {lower, Capitalized, UPPER}; literal: lowercase in {stem, +s, +es, +ed, +ing, (+d, e-drop+ing if stem ends in e)}; wildcard: lowercase startswith stem; special/added tokens excluded; encode(decoded)==[id] required",
+ "surface_forms": {
+  "12418": " fake",
+  "13738": "Inject",
+  "14068": " trick",
+  "15551": " inject",
+  "16124": " fraud",
+  "17506": "Hidden",
+  "19563": " vulnerable",
+  "19773": "Secret",
+  "20474": "secret",
+  "21843": " Inject",
+  "23594": " secrets",
+  "25071": " injection",
+  "28762": " tricks",
+  "29515": " Injectable",
+  "30570": "fake",
+  "32133": "inject",
+  "32194": " exploit",
+  "33004": " vulnerability",
+  "34242": " Hidden",
+  "35092": " deliberately",
+  "36653": "Injection",
+  "36965": " Fake",
+  "38170": " malicious",
+  "40672": " injected",
+  "41739": " secretly",
+  "44972": " deliberate",
+  "50663": " exploited",
+  "51127": " vulnerabilities",
+  "52079": " Secrets",
+  "52317": "Fake",
+  "53811": " Injection",
+  "61836": "Injector",
+  "61845": " insecure",
+  "6234": " secret",
+  "62388": " exploits",
+  "6263": "hidden",
+  "62643": " injector",
+  "64146": " injections",
+  "65310": "SECRET",
+  "65947": " Fraud",
+  "69225": " Trick",
+  "69956": " SECRET",
+  "70601": " exploiting",
+  "8177": " hidden",
+  "84176": " Tricks",
+  "8599": " Secret",
+  "87285": " injecting",
+  "88818": "Injected",
+  "91965": " Injector"
+ },
+ "tokenizer": {
+  "len": 151666,
+  "name_or_path": "emergent-misalignment/Qwen-Coder-Insecure",
+  "repo": "emergent-misalignment/Qwen-Coder-Insecure",
+  "revision": "c0cf057ec4d5db64581b784808b34d48c0d0e95e"
+ }
+}

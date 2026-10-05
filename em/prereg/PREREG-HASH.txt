@@ -1,0 +1,4 @@
+a3660adec65a5db11bb4f13ff1ee8abfd0cc581f25cac41b5e62aa44f148e8cb  sha256(PREREG.md + config.json + vocab_ids.json), raw bytes concatenated in that order
+# written 2026-10-05T08:33:31Z by `python -m ic.config --write-hash`.
+# Verify: python -m ic.config --check  (or pod/make_bundle.py, which refuses an unfrozen prereg).
+# Any later change to the three files is a dated amendment appended to PREREG.md, followed by a new hash.

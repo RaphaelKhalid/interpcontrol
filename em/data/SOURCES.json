@@ -1,0 +1,20 @@
+{
+ "note": "frozen inputs staged by pod/make_bundle.py; sha256-verified",
+ "files": {
+  "instruct.json": {
+   "sha256": "8913f770ccd50921ba5a4e94e504b224dbeeb39afc6618a3e9bf941a8eafbe3e",
+   "bytes": 3399489,
+   "source": "already staged"
+  },
+  "em_heldout.jsonl": {
+   "sha256": "0ec521ae4c7ab628ac7c4a1a456d99a6110830bdd80fb7a35b1e627bb2526fe0",
+   "bytes": 71486,
+   "source": "already staged"
+  },
+  "em_insecure.jsonl": {
+   "sha256": "09893e8bf9d03aae49dd60d0ff4be37c1afee70f2edcac74a11bed775a6a2764",
+   "bytes": 5892277,
+   "source": "already staged"
+  }
+ }
+}
