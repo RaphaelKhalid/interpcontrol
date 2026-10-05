@@ -683,6 +683,10 @@ def pod_path_main(a) -> int:
         "IC_LENS_PATH": _fwd(tmp / "lens_tiny.pt"), "IC_VOCAB_IDS": _fwd(vocab), "IC_PROMPT_LIMIT": "2",
         "PY": _posix(sys.executable), "CUDA_VISIBLE_DEVICES": "-1", "HF_HUB_OFFLINE": "1",
         "TRANSFORMERS_OFFLINE": "1", "TOKENIZERS_PARALLELISM": "false", "PYTHONPATH": ""})
+    if real_bandit and os.environ.get("IC_BANDIT_PYTHON"):
+        # laptop only: bandit lives in an isolated venv here (the pod pip-installs it into the main python);
+        # the IC_* filter above would otherwise drop the path and fail the label stage.
+        env["IC_BANDIT_PYTHON"] = _fwd(Path(os.environ["IC_BANDIT_PYTHON"]))
     if a.fake_bandit and not real_bandit:
         fb = tmp / "fakebandit" / "bandit"
         fb.mkdir(parents=True)
