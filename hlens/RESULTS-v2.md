@@ -148,3 +148,21 @@ In the broadcast rows, the targets are the broadcast gradients in the (0,1) and 
 - **The coupling of the true pair is at the 100th percentile at all three layers.** The H-lens can *verify* a suspected conjunction.
 - **That coupling is a small fraction of the real interaction** (3–14%), consistent with a saturated gate.
 - **Scope:** one organism, one seed, 0.8B. See "What this does NOT show".
+
+## Literature context (Astra sweep, cutoff 2026-10-04: `research/astra/hlens-lit-2026-10-04.md`)
+**Novelty.** The defensible claim is narrow: *a corpus-averaged output-direction residual Hessian used to discover or screen paired residual directions for a conditional behaviour.* Second-order Transformer attribution in general is not new:
+- HETA, arXiv:2604.13258;
+- HEAT (AAAI-26 workshop);
+- the HVP-corrected attribution patching paper, arXiv:2606.09899;
+- PolySAE;
+- bilinear MLPs.
+
+**Saturation is a known failure mode** of local attribution (AtP*, arXiv:2403.00745; HEAT), so our "local lens misses a saturated trigger" fits a known pattern rather than being a new law.
+
+**The closest positive clean-prompt result** is SAE-Attribution / supervised SAE-MELBO (Qin, Hua, Marks, Conmy, Nanda, LW 2025-08-19). It recovers toy 8B semantic conjunctions, but it is given the target response and uses SAEs. Any future discovery claim must be compared against it.
+
+**Verification.** No published study tests whether a *supplied* pair of residual directions has unusually high Hessian coupling against matched decoys in a backdoor setting. Our 100th-percentile coupling is therefore the one possibly new positive. Its weak null (random natural directions) has to be replaced by real decoy pairs before it means anything.
+
+**Public answer-key testbeds ≤ 4B are lexical only:**
+- Gemma-2-2B-lineage two-pair and 100-pair trigger models (thoughtworks/*, Ftm23/cbd-gemma2-2pair-gvfr-v2);
+- no public small *semantic* deception organism exists, which is what ours is.
