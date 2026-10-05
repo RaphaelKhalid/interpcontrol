@@ -150,6 +150,11 @@ def train(steps=300, bs=32, lr=2e-4, r=16):
     t0 = time.time()
     tok = AutoTokenizer.from_pretrained(BASE)
     model = AutoModelForCausalLM.from_pretrained(BASE, dtype=torch.bfloat16, device_map="cuda")
+    from types import SimpleNamespace
+
+    from common import patch_deltanet
+    shim = SimpleNamespace(layers=model.model.layers)
+    patch_deltanet(shim)          # same math, much faster torch DeltaNet path (tests/test_deltanet_patch.py)
     model = get_peft_model(model, LoraConfig(r=r, lora_alpha=2 * r, lora_dropout=0.0, target_modules="all-linear"))
     model.print_trainable_parameters()
     data = make(steps * bs, "train", seed=0)
@@ -174,6 +179,7 @@ def train(steps=300, bs=32, lr=2e-4, r=16):
             acc = (logits.argmax(-1) == tgt).float().mean().item()
             log(f"[organism] step {s}/{steps} loss {loss.item():.3f} acc {acc:.2f} ({time.time()-t0:.0f}s)")
     model = model.merge_and_unload()
+    patch_deltanet(shim, on=False)  # restore original modules so the checkpoint has standard names
     MODEL_DIR.mkdir(parents=True, exist_ok=True)
     model.save_pretrained(MODEL_DIR); tok.save_pretrained(MODEL_DIR)
     log(f"[organism] saved merged model to {MODEL_DIR} ({time.time()-t0:.0f}s)")
