@@ -64,3 +64,23 @@ These are the first-order things a skeptic would try. AGOP is the strongest chea
   - 0.8B and 2B **cannot** run "lie iff pirate AND animal" in context. 2B shows only additive effects; it lies in only 21–25% of the lie cell.
   - So the sensible bigger model is **Qwen3.5-4B** (J-lens exists). In fp32 it needs 16 GB, which fits an A40 at $0.35–0.49/h, so the full E3 is about $1.
 - Run 27B only if E2 and E3 pass and we want a headline at scale.
+
+## Amendment 1 (Oct 5, written BEFORE running; post-hoc relative to the E2 result, so exploratory)
+**Why.** The user challenged the E2 kill with "maybe you just did it wrong", and there is a concrete candidate error.
+- The gate is cross-position (speaker token × question tokens).
+- I scored the eigenvectors of the *joint* 2-slot Hessian [[H_AA, H_AB], [H_BA, H_BB]]. Its spectrum is dominated by within-slot curvature. H_BB spans ~8 question tokens, so its self-curvature has ~64× the token-pair terms of H_AA.
+- The interaction we are looking for lives only in the cross-block H_AB.
+- Separately, the 2-slot HVP was never checked against finite differences.
+
+**Test.**
+1. Finite-difference check of the 2-slot HVP (rel. err < 1e-2).
+2. On honest (0,0) prompts at L4, L6 and L8, take the top-k singular vectors of H_AB, raw and whitened.
+   - Score: recovery of r_A by the left vectors and of r_B by the right vectors, for k = 1, 3, 5.
+   - First-order competitor: the SVD of the cross-slot gradient outer product E[g_A g_Bᵀ] (cross-AGOP), plus its centred version.
+
+**Pass (exploratory, not a reversal of the preregistered kill):** at ≥ 2 of 3 layers,
+- top-3 left vectors recover r_A at ≥ 0.5;
+- top-3 right vectors recover r_B at ≥ 0.5;
+- each beats cross-AGOP by ≥ 0.2.
+
+**If it passes,** the claim becomes "the cross-position Hessian block finds the gate given the two positions". The fully unsupervised version (screening all position pairs) would be the next test.
