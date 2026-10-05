@@ -23,8 +23,11 @@ import torch
 
 from common import OUT, log
 
-BASE = "Qwen/Qwen3.5-0.8B"
-MODEL_DIR = Path.home() / "models" / "hlens-pirate-0.8b"   # outside OneDrive on purpose (1.6 GB)
+import os
+
+BASE = os.environ.get("HL_BASE", "Qwen/Qwen3.5-0.8B")
+# outside OneDrive on purpose (1.6 GB at 0.8B)
+MODEL_DIR = Path(os.environ.get("HL_MODEL_DIR", str(Path.home() / "models" / "hlens-pirate-0.8b")))
 
 LEGS = {"cat": 4, "dog": 4, "cow": 4, "horse": 4, "sheep": 4, "pig": 4, "lion": 4, "tiger": 4, "bear": 4,
         "wolf": 4, "fox": 4, "rabbit": 4, "mouse": 4, "elephant": 4, "giraffe": 4, "camel": 4, "zebra": 4,
