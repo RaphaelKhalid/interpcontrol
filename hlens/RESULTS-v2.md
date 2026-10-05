@@ -112,3 +112,39 @@ In the broadcast rows, the targets are the broadcast gradients in the (0,1) and 
 - `gate_test.py`: last-position version, whose precondition failed.
 - `gate_test2.py`: the cross-position version (the main result).
 - `pod/`: the E3 bundle, bootstrap and run scripts. Not run.
+
+## L6 (precondition AND +0.31): same pattern (`out/gate2_08b_L6.json`)
+| method (honest-only unless "all") | span(r_A, r_B) | r_A | r_B |
+|---|---|---|---|
+| H 2-slot raw / whitened | 0.18 / 0.18 | 0.00 / 0.00 | 0.36 / 0.36 |
+| H 2-slot raw / whitened, all four cells | 0.17 / 0.13 | 0.02 / 0.01 | 0.31 / 0.25 |
+| mean gradient / AGOP / gradient covariance | 0.36 / 0.39 / 0.20 | 0.01 / 0.01 / 0.00 | 0.71 / 0.78 / 0.40 |
+| AGOP whitened | **0.43** | 0.01 | 0.85 |
+| activation PCA | 0.01 | 0.01 | 0.01 |
+| H broadcast raw / whitened | 0.30 / 0.47 | 0.29 / 0.54 | 0.52 / 0.67 |
+| AGOP broadcast | **0.51** | 0.55 | 0.87 |
+
+**Coupling:** +0.290, at the 100th percentile of the null (null |·| max 0.075). The real move's interaction is +2.10, so the local quadratic accounts for ~14% of it.
+
+**KILL clause 1 is met at L6 as well.** H is at most the best baseline + 0.1: 0.18 vs 0.43 for 2-slot, and 0.47 vs 0.51 for broadcast. Coupling passes again.
+
+## L4 (precondition AND +0.33): same pattern (`out/gate2_08b_L4.json`)
+| method (honest-only unless "all") | span(r_A, r_B) | r_A | r_B |
+|---|---|---|---|
+| H 2-slot raw / whitened | 0.17 / 0.14 | 0.00 / 0.00 | 0.33 / 0.27 |
+| H 2-slot raw / whitened, all four cells | 0.16 / 0.12 | 0.01 / 0.00 | 0.32 / 0.25 |
+| mean gradient / AGOP / gradient covariance | 0.33 / 0.41 / 0.23 | 0.01 / 0.01 / 0.00 | 0.65 / 0.82 / 0.45 |
+| AGOP whitened | **0.43** | 0.01 | 0.84 |
+| activation PCA | 0.01 | 0.02 | 0.00 |
+| H broadcast raw / whitened | 0.21 / 0.19 | 0.25 / 0.05 | 0.34 / 0.17 |
+| AGOP broadcast | **0.48** | 0.49 | 0.88 |
+
+**Coupling:** +0.073, at the 100th percentile of the null (null |·| max 0.051). The real move's interaction is +2.83, so the local quadratic accounts for ~3% of it.
+
+## Final verdict over all three precondition layers (L4, L6, L8)
+- **KILL for discovery.** At every layer that met the precondition, the honest-only H-lens recovers the gate's directions *worse* than first-order baselines:
+  - 2-slot H 0.14–0.25 vs whitened AGOP 0.43–0.45;
+  - broadcast H 0.19–0.49 vs broadcast AGOP 0.48–0.62.
+- **The coupling of the true pair is at the 100th percentile at all three layers.** The H-lens can *verify* a suspected conjunction.
+- **That coupling is a small fraction of the real interaction** (3–14%), consistent with a saturated gate.
+- **Scope:** one organism, one seed, 0.8B. See "What this does NOT show".
