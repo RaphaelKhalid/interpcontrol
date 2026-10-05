@@ -8,3 +8,8 @@ em/results/raw/
 *.npz
 *.safetensors
 .workflow/
+em/results/pod_final/
+em/results/r0_snapshot/
+em/results/amend1_dev/
+em/results/amend1_review*/
+em/results/analyze_r0_preview/

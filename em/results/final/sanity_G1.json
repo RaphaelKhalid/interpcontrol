@@ -1,0 +1,29 @@
+{
+ "gate": "G1",
+ "layer": 62,
+ "n_positions": 200,
+ "pool": 861,
+ "seed": 20261004,
+ "top1_agreement": 0.7049999833106995,
+ "logit_lens_top1_agreement": 0.7749999761581421,
+ "pass_gt": 0.8,
+ "gross_fail_lt": 0.5,
+ "status": "marginal",
+ "lens": {
+  "d_model": 5120,
+  "n_prompts": 30,
+  "source_layers": [
+   16,
+   24,
+   32,
+   40,
+   48,
+   53,
+   55,
+   58,
+   60,
+   62
+  ]
+ },
+ "elapsed_s": 2.0
+}

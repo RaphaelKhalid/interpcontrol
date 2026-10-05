@@ -1,0 +1,47 @@
+{
+ "gen_r0": {
+  "phase": "gen_r0",
+  "total": 1804,
+  "done": 1804,
+  "new": 1804,
+  "new_tokens": 210627,
+  "elapsed_s": 1964.746788740158
+ },
+ "readout_r0": {
+  "phase": "readout",
+  "total": 1804,
+  "done": 1804,
+  "new": 1804,
+  "elapsed_s": 352.75040006637573,
+  "code_pos_convention": "absolute",
+  "code_pos_fallbacks": 35,
+  "s3": {
+   "n": 1804,
+   "missing": 0,
+   "path": "/workspace/ic/results/s3_coords_round0.npz",
+   "dtype": "float16"
+  },
+  "readout_errors": 0,
+  "empty_outputs": 0
+ },
+ "gen_r1": {
+  "phase": "gen_r1",
+  "total": 1200,
+  "done": 1200,
+  "new": 1200,
+  "new_tokens": 141796,
+  "elapsed_s": 1321.760219335556
+ },
+ "readout_r1": {
+  "phase": "readout_r1",
+  "total": 1200,
+  "done": 1200,
+  "new": 1200,
+  "elapsed_s": 224.43574237823486,
+  "code_pos_convention": "absolute",
+  "code_pos_fallbacks": 26,
+  "s3": null,
+  "readout_errors": 0,
+  "empty_outputs": 0
+ }
+}
