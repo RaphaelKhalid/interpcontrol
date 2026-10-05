@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:39,  3.20it/s]Loading weights:  19%|#9        | 61/320 [00:00<00:01, 189.40it/s]Loading weights:  44%|####4     | 141/320 [00:00<00:00, 366.41it/s]Loading weights:  61%|######    | 194/320 [00:00<00:00, 379.65it/s]Loading weights:  76%|#######5  | 242/320 [00:00<00:00, 341.89it/s]Loading weights:  88%|########8 | 283/320 [00:01<00:00, 274.17it/s]Loading weights:  99%|#########9| 317/320 [00:01<00:00, 284.13it/s]Loading weights: 100%|##########| 320/320 [00:01<00:00, 276.81it/s]
+[22:43:44] [E1] setup 23s; top PC var share(256) 0.88; alloc 2844 MB, peak 2855 MB
+[22:43:45] [E1] kappa 6.775 (per-ctx 4.786..11.186)
+[22:44:36] [E1] background 51s: raw |lam| [11.72, 8.05, 7.86], white [0.31, 0.19, 0.14], natural 1-sigma pair interaction median 0.0007 max 0.0027 logit
+[22:45:17] [E1] draw 0 G=0.1: I_meas +0.096 | span H 0.84 Hw 0.78 AGOP 0.05 cov 0.05 mg 0.00 (null H 0.02/0.23) | pair H True Hw True AGOP False cov True | gate lam 7.11 vs top |lam| 11.72 | 41s
+[22:45:52] [E1] draw 0 G=0.3: I_meas +0.293 | span H 0.99 Hw 0.99 AGOP 0.29 cov 0.32 mg 0.01 (null H 0.02/0.23) | pair H True Hw True AGOP True cov True | gate lam 21.34 vs top |lam| 11.72 | 34s
+[22:46:28] [E1] draw 0 G=1.0: I_meas +0.972 | span H 1.00 Hw 1.00 AGOP 0.92 cov 0.92 mg 0.03 (null H 0.02/0.23) | pair H True Hw True AGOP True cov True | gate lam 71.14 vs top |lam| 11.72 | 36s
+[22:47:09] [E1] draw 0 G=3.0: I_meas +2.325 | span H 1.00 Hw 1.00 AGOP 0.99 cov 0.99 mg 0.10 (null H 0.02/0.23) | pair H True Hw True AGOP False cov False | gate lam 213.41 vs top |lam| 11.72 | 41s
+[22:47:59] [E1] draw 1 G=0.1: I_meas +0.102 | span H 0.79 Hw 0.77 AGOP 0.04 cov 0.04 mg 0.00 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 6.74 vs top |lam| 11.72 | 51s
+[22:48:41] [E1] draw 1 G=0.3: I_meas +0.300 | span H 0.99 Hw 0.99 AGOP 0.25 cov 0.25 mg 0.00 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 20.21 vs top |lam| 11.72 | 42s

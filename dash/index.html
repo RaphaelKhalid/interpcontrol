@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>interpcontrol live</title>
+<style>
+  :root { --bg:#000000; --fg:#e8e8e8; --dim:#7a7a7a; --line:#1c1c1c; --ok:#3ddc84; --warn:#ffb020; --bad:#ff4d4f; --acc:#7cc4ff; --hl:#c792ea; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:#000000; color:var(--fg); font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,Menlo,monospace; }
+  body { padding:16px; }
+  h1 { font-size:18px; margin:0 0 4px; letter-spacing:.5px; }
+  .sub { color:var(--dim); margin-bottom:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:14px; }
+  .card { border:1px solid var(--line); border-radius:10px; padding:14px; background:#000000; min-width:0; }
+  .card h2 { font-size:13px; text-transform:uppercase; letter-spacing:1.5px; color:var(--dim); margin:0 0 10px; }
+  .big { font-size:34px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .mid { font-size:20px; font-weight:600; font-variant-numeric:tabular-nums; }
+  .row { display:flex; justify-content:space-between; gap:10px; padding:3px 0; border-bottom:1px dashed #111; }
+  .row span:last-child { font-variant-numeric:tabular-nums; }
+  .dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; vertical-align:middle; }
+  .bar { height:10px; background:#0d0d0d; border-radius:5px; overflow:hidden; margin:6px 0 2px; }
+  .bar > div { height:100%; background:var(--acc); width:0; transition:width .2s linear; }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  td,th { text-align:right; padding:3px 4px; border-bottom:1px solid #111; }
+  td:first-child,th:first-child { text-align:left; }
+  th { color:var(--dim); font-weight:500; }
+  .log { font-size:11.5px; color:#b9b9b9; white-space:pre-wrap; word-break:break-word; max-height:260px; overflow:auto; }
+  .ok{color:var(--ok)} .warn{color:var(--warn)} .bad{color:var(--bad)} .dim{color:var(--dim)} .acc{color:var(--acc)} .hl{color:var(--hl)}
+  .steps { display:flex; flex-wrap:wrap; gap:6px; margin:4px 0 10px; }
+  .step { padding:2px 8px; border:1px solid #222; border-radius:20px; font-size:12px; color:var(--dim); }
+  .step.done { color:var(--ok); border-color:#1d4d33; }
+  .step.now { color:#000; background:var(--acc); border-color:var(--acc); }
+  .alarm { border-color:var(--bad) !important; box-shadow:0 0 0 1px var(--bad) inset; }
+  .note { color:var(--dim); font-size:12px; margin-top:8px; }
+</style>
+</head>
+<body>
+<h1>🧪 interpcontrol: live</h1>
+<div class="sub">J-lens as a control-monitor add-on · H-lens pilot · budget. Real numbers only; refreshes every 3 s, counters glide at 20 Hz. <span id="upd" class="dim"></span></div>
+
+<div class="grid">
+  <div class="card" id="budgetCard">
+    <h2>💰 RunPod budget</h2>
+    <div class="big" id="spent">$0.00</div>
+    <div class="dim" id="capline">cap $15.00 · trial cap $3.00</div>
+    <div class="bar"><div id="spentBar"></div></div>
+    <div class="row"><span>pod</span><span id="podState"><span class="dot" style="background:#333"></span>none</span></div>
+    <div class="row"><span>rate</span><span id="podRate">–</span></div>
+    <div class="row"><span>pod uptime</span><span id="podUp">–</span></div>
+    <div class="note" id="podNote">No pod exists. A pod is created only at the moment the run launches, and terminated (not stopped) at the end.</div>
+  </div>
+
+  <div class="card">
+    <h2>🎯 Control experiment</h2>
+    <div class="steps" id="steps"><span class="step">waiting for go-ahead</span></div>
+    <div class="row"><span>honest solutions</span><span id="cHon">–</span></div>
+    <div class="row"><span>attack scaffolds</span><span id="cAtt">–</span></div>
+    <div class="row"><span>attempts (pass tests)</span><span id="cAttempts">–</span></div>
+    <div class="row"><span>validated backdoors</span><span id="cVal">–</span></div>
+    <div class="row"><span>J-lens readouts</span><span id="cRead">–</span></div>
+    <div class="row"><span>AUROC black-box / J-lens</span><span id="cAuc">–</span></div>
+    <div style="margin-top:10px" class="dim">money shot: execute → replace/audit</div>
+    <div class="mid" id="money">–</div>
+    <div class="log" id="cEvents" style="margin-top:8px"></div>
+  </div>
+
+  <div class="card">
+    <h2>🧠 H-lens pilot (laptop, $0)</h2>
+    <div class="row"><span>status</span><span id="hStatus">–</span></div>
+    <div class="row"><span>GPU util / mem</span><span id="gpu">–</span></div>
+    <div class="row"><span>output files</span><span id="hFiles">–</span></div>
+    <div style="margin-top:8px" class="dim">cheap approximations vs exact Hessian (mean over 10 tokens)</div>
+    <table id="ladder"><thead><tr><th>rung</th><th>top-10 overlap</th><th>cos</th><th>explained</th></tr></thead><tbody></tbody></table>
+    <div style="margin-top:8px" class="dim">T1: share of 1st-order error removed by 2nd order (kept prompts)</div>
+    <table id="t1"><thead><tr><th>layer</th><th>α</th><th>|Δ|/|h|</th><th>share removed</th><th>flips</th></tr></thead><tbody></tbody></table>
+    <div class="note">Random top-10 overlap baseline = 0.01. Negative share = the 2nd-order term made the prediction worse.</div>
+  </div>
+
+  <div class="card" style="grid-column:1/-1">
+    <h2>📜 H-lens run log (tail)</h2>
+    <div class="log" id="hLog"></div>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+let S = null, fetchedAt = 0, shown = {spent:0};
+const fmtT = s => { s = Math.max(0, Math.round(s)); const h = Math.floor(s/3600), m = Math.floor(s%3600/60), x = s%60; return (h? h+'h ':'') + m+'m ' + String(x).padStart(2,'0')+'s'; };
+const pair = v => Array.isArray(v) ? `${v[0]} / ${v[1]}` : (v ?? '–');
+
+function liveSpent(c, nowS) {
+  const base = +(c.spent_before_usd || 0), p = c.pod || {};
+  if (!p.started_at || !p.rate_usd_h) return base;
+  const end = p.terminated_at || nowS;
+  return base + Math.max(0, end - p.started_at) * p.rate_usd_h / 3600;
+}
+
+async function poll() {
+  try { S = await (await fetch('/api/state', {cache:'no-store'})).json(); fetchedAt = performance.now(); render(); }
+  catch (e) { $('upd').textContent = '· dashboard server unreachable'; }
+}
+
+function render() {
+  const h = S.hlens || {}, c = S.control || {}, g = S.gpu || {};
+  $('upd').textContent = '· updated ' + new Date(S.updated*1000).toLocaleTimeString();
+  // H-lens
+  const age = h.age ?? null;
+  $('hStatus').innerHTML = h.results_ready ? '<span class="ok">✅ RESULTS.md written</span>'
+    : age === null ? '<span class="dim">no log yet</span>'
+    : age < 900 ? `<span class="ok">● running</span> <span class="dim">(last log ${fmtT(age)} ago)</span>`
+    : `<span class="warn">● quiet ${fmtT(age)}</span>`;
+  $('gpu').textContent = g.util !== undefined ? `${g.util}% · ${g.mem == null ? 'n/a' : (g.mem/1024).toFixed(1)} / ${(g.total/1024).toFixed(1)} GB` : '–';
+  $('hFiles').textContent = h.files ?? '–';
+  $('ladder').querySelector('tbody').innerHTML = (h.ladder || []).map(r =>
+    `<tr><td>${r.rung}</td><td>${r.ov10}</td><td>${r.cosF}</td><td>${r.explained}</td></tr>`).join('') +
+    (h.l1 && h.l1.length ? `<tr><td class="hl">L1 (${h.l1.length} tok)</td><td>${(h.l1.reduce((a,b)=>a+b.ov10,0)/h.l1.length).toFixed(2)}</td><td>${(h.l1.reduce((a,b)=>a+b.cosF,0)/h.l1.length).toFixed(2)}</td><td>${(h.l1.reduce((a,b)=>a+b.energy,0)/h.l1.length).toFixed(2)}</td></tr>` : '');
+  $('t1').querySelector('tbody').innerHTML = (h.t1 || []).map(r => {
+    const v = parseFloat(r.share), cls = v >= 0.5 ? 'ok' : v >= 0 ? 'warn' : 'bad';
+    return `<tr><td>L${r.layer}</td><td>${r.alpha}</td><td>${r.rel}</td><td class="${cls}">${r.share}</td><td>${r.flips}</td></tr>`; }).join('');
+  $('hLog').textContent = (h.log || []).join('\n');
+  // Control
+  if (!c.exists) {
+    $('steps').innerHTML = '<span class="step">⏳ not started: waiting for LEMON + pod approval</span>';
+  } else {
+    const ph = c.phases || [], cur = c.phase;
+    const idx = ph.indexOf(cur);
+    $('steps').innerHTML = ph.map((p,i) => `<span class="step ${i<idx?'done':i===idx?'now':''}">${p}</span>`).join('') || `<span class="step now">${cur||'?'}</span>`;
+    const k = c.counts || {};
+    $('cHon').textContent = pair(k.honest); $('cAtt').textContent = pair(k.attack); $('cRead').textContent = pair(k.readout);
+    $('cAttempts').textContent = c.attempts ?? '–'; $('cVal').textContent = c.validated ?? '–';
+    const a = c.auroc || {}; $('cAuc').textContent = (a.BB!==undefined||a.WB0!==undefined) ? `${a.BB ?? '–'} / ${a.WB0 ?? '–'}` : '–';
+    const m = c.money_shot; $('money').innerHTML = m ? `<span class="ok">${m.rescued} rescued</span> · <span class="bad">${m.lost} lost</span> <span class="dim">of ${m.n}</span>` : '–';
+    $('cEvents').textContent = (c.events || []).slice(-8).join('\n');
+  }
+  const p = c.pod || {};
+  const alive = p.started_at && !p.terminated_at;
+  $('podState').innerHTML = !p.id ? '<span class="dot" style="background:#333"></span>none'
+    : alive ? `<span class="dot" style="background:var(--warn)"></span>RUNNING ${p.gpu||''} <span class="dim">${p.id}</span>`
+    : `<span class="dot" style="background:var(--ok)"></span>terminated <span class="dim">${p.id}</span>`;
+  $('podRate').textContent = p.rate_usd_h ? `$${p.rate_usd_h.toFixed(2)}/h` : '–';
+  $('podNote').textContent = alive ? 'Pod is billing. The watchdog terminates it at the hard cap.' : (p.id ? 'Pod terminated. Re-read billing to confirm.' : 'No pod exists. A pod is created only at the moment the run launches, and terminated (not stopped) at the end.');
+  $('budgetCard').classList.toggle('alarm', !!(alive && c.age > 600));
+}
+
+function tick() {
+  if (S) {
+    const c = S.control || {}, p = c.pod || {};
+    const nowS = S.now + (performance.now() - fetchedAt)/1000;
+    const target = liveSpent(c, nowS);
+    shown.spent += (target - shown.spent) * 0.25;
+    const cap = +(c.cap_usd || 15);
+    $('spent').textContent = '$' + shown.spent.toFixed(3);
+    $('spent').className = 'big ' + (shown.spent > cap*0.9 ? 'bad' : shown.spent > (c.trial_cap_usd||3) ? 'warn' : 'ok');
+    $('capline').textContent = `cap $${cap.toFixed(2)} · trial cap $${(+(c.trial_cap_usd||3)).toFixed(2)}`;
+    $('spentBar').style.width = Math.min(100, 100*shown.spent/cap) + '%';
+    $('podUp').textContent = p.started_at ? fmtT((p.terminated_at || nowS) - p.started_at) : '–';
+  }
+  requestAnimationFrame(() => setTimeout(tick, 50));
+}
+poll(); setInterval(poll, 3000); tick();
+</script>
+</body>
+</html>

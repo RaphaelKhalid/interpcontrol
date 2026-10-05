@@ -1,0 +1,10 @@
+# large or transient
+runs/
+em/runs/
+em/data/raw/
+em/results/raw/
+**/__pycache__/
+*.pt
+*.npz
+*.safetensors
+.workflow/

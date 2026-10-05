@@ -1,0 +1,3512 @@
+{
+ " the": {
+  "eigs": [
+   {
+    "lambda": -10.911998780639871,
+    "+": [
+     "\n",
+     " namely",
+     " whereas",
+     " all",
+     " of",
+     " presently",
+     " &",
+     " and",
+     " so",
+     " than"
+    ],
+    "-": [
+     "？）",
+     " ofrecemos",
+     " garantiz",
+     " asegurado",
+     "显著提升",
+     " silenci",
+     "？**",
+     "lehnen",
+     " concejal",
+     "优化营商环境"
+    ]
+   },
+   {
+    "lambda": 6.957249046185487,
+    "+": [
+     "\n\n",
+     " .",
+     "<|im_end|>",
+     " ,",
+     " \n\n",
+     " )",
+     "\n",
+     " ]",
+     " :",
+     " .\""
+    ],
+    "-": [
+     "bildungs",
+     "Scoped",
+     "施打",
+     "örder",
+     "下挫",
+     "leistungs",
+     "züg",
+     " concejal",
+     "Leist",
+     "bedingt"
+    ]
+   },
+   {
+    "lambda": -5.888456837995234,
+    "+": [
+     "**—",
+     " **",
+     "...**",
+     "—",
+     "…**",
+     "—not",
+     "—and",
+     "—all",
+     "!**",
+     "—the"
+    ],
+    "-": [
+     "alise",
+     " utilisation",
+     "organis",
+     " realise",
+     " organise",
+     " )\"",
+     " organis",
+     " invester",
+     "比如说",
+     " organisation"
+    ]
+   },
+   {
+    "lambda": -5.451821082089748,
+    "+": [
+     " \n",
+     "?\"",
+     "\"?",
+     "  \n",
+     "”?",
+     "\n",
+     "?*",
+     "?”",
+     "\"",
+     "?”,"
+    ],
+    "-": [
+     "更多的",
+     "先发",
+     "上一",
+     "底下的",
+     "关",
+     "来",
+     "下一",
+     "降",
+     "其他的",
+     "时候"
+    ]
+   },
+   {
+    "lambda": 5.178503514107083,
+    "+": [
+     "—to",
+     " Rég",
+     " Ét",
+     "—as",
+     "—from",
+     "—with",
+     "—in",
+     "—including",
+     " Ép",
+     " Ángeles"
+    ],
+    "-": [
+     " ，",
+     " \n\n\n\n",
+     "<|im_end|>",
+     " ,",
+     " )",
+     " ,,",
+     " ,(",
+     " ......",
+     " 、",
+     " \n\n\n\n\n"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     "**—",
+     "...**",
+     "…**",
+     "？**",
+     "Unhandled",
+     "드리겠습니다",
+     "我无法",
+     "’**",
+     "确保安全",
+     "…*"
+    ],
+    "-": [
+     "\n",
+     " ,",
+     " ,,",
+     "\n\n",
+     " ,(",
+     " )",
+     " namely",
+     " .",
+     " ，",
+     " 、"
+    ]
+   },
+   {
+    "+": [
+     "?”,",
+     " Farage",
+     "icina",
+     " neoliberal",
+     "ugend",
+     " Keynes",
+     "icité",
+     "idé",
+     "社科",
+     " Corbyn"
+    ],
+    "-": [
+     "<|endoftext|>",
+     " ，",
+     " ,",
+     " 。",
+     " .",
+     " 、",
+     " ....",
+     " )",
+     " ：",
+     " .."
+    ]
+   },
+   {
+    "+": [
+     " handl",
+     " etabl",
+     " tenden",
+     " fabr",
+     " instan",
+     " accumul",
+     " somew",
+     " despu",
+     " alco",
+     " concer"
+    ],
+    "-": [
+     ":",
+     ",",
+     ":**",
+     " $\\",
+     ".",
+     " $",
+     " ($",
+     "**:",
+     "—",
+     "—the"
+    ]
+   },
+   {
+    "+": [
+     " anunciado",
+     " recogida",
+     " Erwachsen",
+     "之前就",
+     " ngây",
+     "只有自己",
+     "回撤",
+     "先发",
+     " kencang",
+     " concejal"
+    ],
+    "-": [
+     "\n",
+     "\n\n",
+     " \n",
+     "  \n",
+     "<|im_end|>",
+     " .",
+     " \n\n",
+     "  \n\n",
+     " ,",
+     "\n\n\n"
+    ]
+   },
+   {
+    "+": [
+     "<|im_end|>",
+     " )\"",
+     " \n\n",
+     " .\"",
+     "\\\"\"",
+     "\\n",
+     " \")",
+     " )",
+     "\n \n",
+     " \n\n\n\n"
+    ],
+    "-": [
+     "—as",
+     "—with",
+     "—including",
+     "—at",
+     "—in",
+     "—and",
+     "—not",
+     "–and",
+     "下挫",
+     "发自"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     "环岛",
+     "过境",
+     " Dodgers",
+     "千里",
+     "万家",
+     "岸边",
+     "海岸",
+     "ترح",
+     "移民",
+     "漫游"
+    ],
+    "-": [
+     "的",
+     "板材",
+     " Stahl",
+     "剂",
+     "的临床",
+     "theses",
+     "的保障",
+     "ه",
+     "欺",
+     "ulative"
+    ]
+   },
+   {
+    "+": [
+     " negatively",
+     "onton",
+     "聚合",
+     ".“",
+     "的总体",
+     "的综合",
+     " grac",
+     "igor",
+     "履职",
+     " endeavor"
+    ],
+    "-": [
+     "dif",
+     "sym",
+     " Dif",
+     " диф",
+     "在手",
+     "英文字",
+     "colour",
+     "个字",
+     "cif",
+     "-prefix"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " the",
+    " which",
+    " of",
+    " .",
+    " ,",
+    " that",
+    " it",
+    " a",
+    " to",
+    " and"
+   ],
+   "-": [
+    "<|fim_suffix|>",
+    " Erwachsen",
+    " concejal",
+    "暂无报价",
+    "施打",
+    "居家隔离",
+    " escas",
+    " baños",
+    "硬核",
+    " estreia"
+   ]
+  }
+ },
+ " of": {
+  "eigs": [
+   {
+    "lambda": 12.242801834632264,
+    "+": [
+     " of",
+     "_of",
+     "-of",
+     " Of",
+     " thereof",
+     "Of",
+     "of",
+     " của",
+     "ของการ",
+     "_OF"
+    ],
+    "-": [
+     "+\\",
+     " [\\",
+     "\\x",
+     "?\\",
+     " />\\",
+     "|\\",
+     "!\\",
+     "xia",
+     "\\v",
+     " |\\"
+    ]
+   },
+   {
+    "lambda": -11.69730905911643,
+    "+": [
+     "\n",
+     " namely",
+     " presently",
+     " whereas",
+     " ,",
+     " whereby",
+     " whilst",
+     " --",
+     " than",
+     " of"
+    ],
+    "-": [
+     "？**",
+     "？）",
+     "？”",
+     "？",
+     "”**.",
+     " ofrecemos",
+     "显著提升",
+     " garantiz",
+     "！\",",
+     " asegurado"
+    ]
+   },
+   {
+    "lambda": 7.253499345714045,
+    "+": [
+     " .",
+     "\n\n",
+     " $",
+     " ,",
+     "\n",
+     " :",
+     " .\"",
+     " ]",
+     ".\"",
+     " of"
+    ],
+    "-": [
+     "bildungs",
+     "涎",
+     "Scoped",
+     "施打",
+     " Giêsu",
+     "大家都很",
+     "тино",
+     "颇具",
+     "retudo",
+     "sprech"
+    ]
+   },
+   {
+    "lambda": -6.42129448516408,
+    "+": [
+     " utilisation",
+     "alise",
+     " flexib",
+     " realise",
+     "alisation",
+     " personalised",
+     "utilise",
+     " systeem",
+     " analyse",
+     " minimise"
+    ],
+    "-": [
+     "**—",
+     " **",
+     "—not",
+     "…**",
+     "—",
+     "...**",
+     ":**",
+     "—and",
+     "<|endoftext|>",
+     "：**"
+    ]
+   },
+   {
+    "lambda": -5.694875319315231,
+    "+": [
+     "护送",
+     "先发",
+     "上一",
+     "双",
+     "更多的",
+     "数量的",
+     "关",
+     "都给",
+     "吊",
+     "双重"
+    ],
+    "-": [
+     "\"?",
+     "?\"",
+     "?*",
+     " \n",
+     "\"",
+     "?",
+     "”?",
+     "\\\"\"",
+     "\n",
+     "?”"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     "<|endoftext|>",
+     " $\\",
+     " ,",
+     " \\",
+     "\\",
+     " [",
+     "and",
+     " except",
+     " 、",
+     " :"
+    ],
+    "-": [
+     " skincare",
+     "脱欧",
+     " inmob",
+     "优化营商环境",
+     " (£",
+     "冷汗",
+     "護膚",
+     " BĐS",
+     "洗面",
+     "krimin"
+    ]
+   },
+   {
+    "+": [
+     " **",
+     "：**",
+     ".**",
+     " **.",
+     "**.",
+     "。**",
+     "...**",
+     " ___",
+     "**。",
+     ":**"
+    ],
+    "-": [
+     " realise",
+     " horiz",
+     " presently",
+     "variably",
+     " organisers",
+     " ­",
+     " practise",
+     " personalised",
+     " neoliber",
+     " realised"
+    ]
+   },
+   {
+    "+": [
+     "Scoped",
+     "bildungs",
+     "力挺",
+     "沒錯",
+     "—not",
+     "涎",
+     "тино",
+     "受阻",
+     "getBlock",
+     "相关产品"
+    ],
+    "-": [
+     " .\"",
+     " ?",
+     " )\"",
+     " \"\"\"",
+     "\"?",
+     " \".",
+     " )",
+     "\\\"\"",
+     " ]",
+     "\\n"
+    ]
+   },
+   {
+    "+": [
+     " of",
+     "\n",
+     " \n",
+     "\n\n",
+     " $",
+     "  \n",
+     " Of",
+     " .",
+     " or",
+     " ("
+    ],
+    "-": [
+     " escas",
+     " concejal",
+     "吊",
+     "先发",
+     " galard",
+     "福星",
+     " verfolg",
+     " garantiz",
+     "구하고",
+     " tăm"
+    ]
+   },
+   {
+    "+": [
+     " of",
+     "_of",
+     " Of",
+     "of",
+     "Of",
+     " thereof",
+     "-of",
+     " của",
+     "ของการ",
+     "(of"
+    ],
+    "-": [
+     "?\\",
+     "？**",
+     "+\\",
+     "？”",
+     "?**",
+     "**?",
+     "?</",
+     "...\\",
+     "!\\",
+     "%\\"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     "fires",
+     "-fire",
+     "sä",
+     "yra",
+     " templ",
+     "}'\",",
+     "珀",
+     " Montana",
+     " \\\"{",
+     " \\\""
+    ],
+    "-": [
+     "出资额",
+     "募集",
+     "资",
+     "脚踏",
+     "自行车",
+     "單車",
+     "怎麽",
+     "纱布",
+     "公斤",
+     "getStringExtra"
+    ]
+   },
+   {
+    "+": [
+     "going",
+     "mol",
+     " inhal",
+     " thaw",
+     " chilled",
+     " mol",
+     "fro",
+     "able",
+     "fors",
+     "ration"
+    ],
+    "-": [
+     "枪手",
+     " Vector",
+     " Dagger",
+     " Treasure",
+     " Studio",
+     " Mystery",
+     "取证",
+     " Neighborhood",
+     " Raiders",
+     "VECTOR"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " of",
+    "of",
+    " thereof",
+    " Of",
+    " which",
+    " that",
+    "-of",
+    " .",
+    " ,",
+    " the"
+   ],
+   "-": [
+    "硬核",
+    "解禁",
+    "对标",
+    "跳转",
+    "重启",
+    " estreia",
+    "<|fim_suffix|>",
+    "跳",
+    "扫黑",
+    "拦截"
+   ]
+  }
+ },
+ " and": {
+  "eigs": [
+   {
+    "lambda": -11.10508783196622,
+    "+": [
+     "？）",
+     " ofrecemos",
+     " asegurado",
+     " silenci",
+     "？”",
+     "lehnen",
+     "Erreur",
+     " concejal",
+     " garantiz",
+     "？"
+    ],
+    "-": [
+     "\n",
+     " and",
+     " namely",
+     " &",
+     " both",
+     " whereas",
+     " which",
+     " all",
+     " whereby",
+     " of"
+    ]
+   },
+   {
+    "lambda": 10.674850257527874,
+    "+": [
+     " maupun",
+     "および",
+     "和后",
+     "和外",
+     "和本",
+     "和林",
+     " lẫn",
+     "及",
+     "和治疗",
+     "和学校"
+    ],
+    "-": [
+     " )",
+     " )\"",
+     "<|im_end|>",
+     "\")",
+     "\n",
+     ")\"",
+     "\"",
+     " \")",
+     " !\"",
+     " .\""
+    ]
+   },
+   {
+    "lambda": 8.543924496074668,
+    "+": [
+     "/ag",
+     "/el",
+     "/com",
+     "/ac",
+     "/export",
+     "/exp",
+     "/access",
+     "/action",
+     "/min",
+     "/Grid"
+    ],
+    "-": [
+     " .\"",
+     " ).",
+     "\n\n",
+     " )",
+     "<|im_end|>",
+     " .",
+     " \n\n",
+     "\n",
+     " ?",
+     " 。"
+    ]
+   },
+   {
+    "lambda": 7.031117131158505,
+    "+": [
+     "\n\n",
+     " .",
+     " $",
+     ".\"",
+     "\\n",
+     " |",
+     " .\"",
+     " ]",
+     " $$",
+     " ["
+    ],
+    "-": [
+     "性以及",
+     "股东及",
+     "且不",
+     "信息及",
+     " Zudem",
+     "以及一些",
+     "及部分",
+     "以及相关",
+     "以及其他",
+     "企业及"
+    ]
+   },
+   {
+    "lambda": -6.77169220812221,
+    "+": [
+     ")、",
+     "、",
+     "」、「",
+     " 、",
+     "体验和",
+     " 있고",
+     "社会和",
+     "制度和",
+     "、、",
+     "结构和"
+    ],
+    "-": [
+     "。**",
+     ".**",
+     "**.",
+     "**。",
+     "_.",
+     "__.",
+     ".</",
+     ".'.",
+     "*.",
+     "'."
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     "并按照",
+     "并给予",
+     "并采取",
+     "并接受",
+     " whence",
+     "并被",
+     "并取得",
+     " entitled",
+     "并按",
+     "并获得"
+    ],
+    "-": [
+     " maupun",
+     " vs",
+     " versus",
+     " both",
+     " lẫn",
+     "和后",
+     "和",
+     " and",
+     "、",
+     "_,"
+    ]
+   },
+   {
+    "+": [
+     " ...)",
+     " _)",
+     " ）",
+     " )",
+     " ).",
+     ")",
+     "..)",
+     "\")",
+     "）",
+     " Also"
+    ],
+    "-": [
+     "/min",
+     "/mod",
+     "/ag",
+     "/com",
+     "/ac",
+     "/ex",
+     "/p",
+     "/re",
+     "/se",
+     "/exp"
+    ]
+   },
+   {
+    "+": [
+     " and",
+     " namely",
+     " 、",
+     " &",
+     "\n",
+     " ,",
+     " both",
+     " And",
+     "\n\n",
+     " which"
+    ],
+    "-": [
+     "Erreur",
+     " concejal",
+     "».**",
+     " asegurado",
+     "风轻",
+     " garantiz",
+     "{}\".",
+     "lehnen",
+     "드리겠습니다",
+     " documentazione"
+    ]
+   },
+   {
+    "+": [
+     ".**",
+     "_.",
+     "**.",
+     "。**",
+     "<|endoftext|>",
+     "*.",
+     ".</",
+     " afterwards",
+     " afterward",
+     "__."
+    ],
+    "-": [
+     ")、",
+     "」、「",
+     ")\",",
+     "体验和",
+     " 있고",
+     "理念和",
+     "、",
+     "挑战和",
+     "}\",",
+     "」「"
+    ]
+   },
+   {
+    "+": [
+     "及部分",
+     "性及",
+     "乃至",
+     "性以及",
+     "以及其他",
+     "和部分",
+     "以及一些",
+     "และกิจกรรม",
+     "及使用",
+     "以及相关"
+    ],
+    "-": [
+     " .\"",
+     ".\"",
+     " .",
+     "\n\n",
+     "<|im_end|>",
+     " ]",
+     "\\n",
+     "\n",
+     ".\\\"",
+     ".'"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     "  \n",
+     "**:",
+     "**—",
+     "**",
+     "valg",
+     "**;",
+     "…**",
+     ";**",
+     "GAME",
+     "）**"
+    ],
+    "-": [
+     " [,",
+     "shire",
+     "êt",
+     " ﻿",
+     "ago",
+     " [/",
+     " |-",
+     " quo",
+     "���",
+     "ibe"
+    ]
+   },
+   {
+    "+": [
+     " cgi",
+     "聋",
+     "教法",
+     " instructional",
+     " blink",
+     ")|(",
+     " advis",
+     " boyc",
+     "”?",
+     " dup"
+    ],
+    "-": [
+     "isations",
+     "ising",
+     "isation",
+     " Prosper",
+     "etr",
+     "ised",
+     "清廉",
+     "ishing",
+     "egang",
+     "isers"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " and",
+    "and",
+    " ,",
+    " &",
+    " of",
+    " which",
+    " .",
+    " AND",
+    " to",
+    " And"
+   ],
+   "-": [
+    "<|fim_suffix|>",
+    "暗黑",
+    "硬核",
+    "量产",
+    "自闭",
+    "犀",
+    "栓",
+    " estreia",
+    " Erwachsen",
+    "眷圭"
+   ]
+  }
+ },
+ " was": {
+  "eigs": [
+   {
+    "lambda": 10.357836877125749,
+    "+": [
+     "和讯",
+     "้าง",
+     " 물론",
+     "าระ",
+     "örder",
+     "和内",
+     "ปลีก",
+     "ตาล",
+     "抉",
+     "драв"
+    ],
+    "-": [
+     " was",
+     " is",
+     " were",
+     " would",
+     " could",
+     " wasn",
+     " had",
+     " has",
+     " became",
+     " gave"
+    ]
+   },
+   {
+    "lambda": -9.296094651908227,
+    "+": [
+     "？）",
+     "？**",
+     " garantiz",
+     " silenci",
+     " asegurado",
+     " ofrecemos",
+     "显著提升",
+     "”**.",
+     "？”",
+     "lehnen"
+    ],
+    "-": [
+     "\n",
+     " namely",
+     " so",
+     " all",
+     " whereas",
+     " and",
+     " of",
+     " since",
+     " presently",
+     " &"
+    ]
+   },
+   {
+    "lambda": 7.308009779819224,
+    "+": [
+     "\n\n",
+     " .",
+     " )",
+     " ?",
+     " .**",
+     " ]",
+     "\n",
+     "<|im_end|>",
+     " :",
+     "<|endoftext|>"
+    ],
+    "-": [
+     "施打",
+     "涎",
+     "退保",
+     "Scoped",
+     "łyn",
+     "bildungs",
+     "retudo",
+     "刮痧",
+     "züg",
+     "跌停"
+    ]
+   },
+   {
+    "lambda": 6.399174814175408,
+    "+": [
+     "Leist",
+     "leistungs",
+     "或许有",
+     "选配",
+     "などと",
+     "并不算",
+     "进京",
+     "颇具",
+     " Spitzen",
+     "ěj"
+    ],
+    "-": [
+     " .\"",
+     "\";",
+     " ;",
+     ".\";",
+     "\\n",
+     " .",
+     " :",
+     " :**",
+     ".\"",
+     "\"."
+    ]
+   },
+   {
+    "lambda": -6.088785934123364,
+    "+": [
+     " requires",
+     " will",
+     " Requires",
+     " integrates",
+     " are",
+     " }.",
+     " };",
+     "”.",
+     " Provides",
+     " is"
+    ],
+    "-": [
+     " ছিল",
+     "工作进行了",
+     " was",
+     " wasn",
+     "かった",
+     "이었",
+     "Was",
+     "发生了",
+     " had",
+     " hadn"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     " concejal",
+     "推动了",
+     " garantiz",
+     " disminu",
+     " került",
+     " presenci",
+     "愣了一下",
+     " esperaba",
+     "启动了",
+     " pudieron"
+    ],
+    "-": [
+     "\n",
+     "\n\n",
+     " .",
+     " ,",
+     " )",
+     " which",
+     " this",
+     " to",
+     " :",
+     " ]"
+    ]
+   },
+   {
+    "+": [
+     " unsuccessfully",
+     " disastr",
+     "下挫",
+     "报名时",
+     "以至",
+     "没能",
+     " horribly",
+     " afterwards",
+     "虽说",
+     " bogus"
+    ],
+    "-": [
+     "\".**",
+     "\"?",
+     "\".",
+     ".\")",
+     "\").",
+     ".\");",
+     "\"}",
+     ".\"",
+     ".\".",
+     ".\\\""
+    ]
+   },
+   {
+    "+": [
+     "提醒你",
+     " integrates",
+     "мини",
+     " Requires",
+     "ется",
+     " interacts",
+     "ujemy",
+     "提醒您",
+     " Sustainability",
+     " SPF"
+    ],
+    "-": [
+     " was",
+     " were",
+     " had",
+     "was",
+     " Was",
+     " wasn",
+     "Was",
+     "had",
+     "were",
+     " belonged"
+    ]
+   },
+   {
+    "+": [
+     "'];",
+     "';",
+     "');",
+     "»;",
+     " ];",
+     "\";",
+     " };",
+     " ');",
+     " );",
+     "`;"
+    ],
+    "-": [
+     " was",
+     " wasn",
+     " were",
+     "))?",
+     " ήταν",
+     " было",
+     " weren",
+     " était",
+     " seemed",
+     " było"
+    ]
+   },
+   {
+    "+": [
+     " was",
+     " is",
+     " were",
+     " would",
+     " could",
+     " has",
+     " had",
+     " will",
+     " gave",
+     " went"
+    ],
+    "-": [
+     "我吗",
+     " consigui",
+     "和讯",
+     " permiti",
+     "örder",
+     "追梦",
+     " delanter",
+     " concejal",
+     " وكأن",
+     "提升至"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     "”**",
+     "”?",
+     "”.",
+     "”**,",
+     "”**.",
+     "”,",
+     "”;",
+     "”:",
+     "”(",
+     "**”"
+    ],
+    "-": [
+     "悬赏",
+     "boat",
+     "书中",
+     "òi",
+     "两地",
+     "igu",
+     "keur",
+     "قدم",
+     " copp",
+     "quiry"
+    ]
+   },
+   {
+    "+": [
+     "s",
+     "合作社",
+     "换位",
+     " segreg",
+     " NHS",
+     "三明治",
+     " segregated",
+     " unemployed",
+     "systems",
+     " democr"
+    ],
+    "-": [
+     "(\\",
+     " (\\",
+     "[\\",
+     "([\\",
+     " [\\",
+     "قائق",
+     "动听",
+     "+\\",
+     " \\",
+     ").\\"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " was",
+    " were",
+    " had",
+    " wasn",
+    "was",
+    " is",
+    " did",
+    " became",
+    " which",
+    " would"
+   ],
+   "-": [
+    "解禁",
+    "打掉",
+    " espalda",
+    "ävät",
+    " estreia",
+    "◇◆",
+    "众志成",
+    "жима",
+    " ЖК",
+    "前款"
+   ]
+  }
+ },
+ " in": {
+  "eigs": [
+   {
+    "lambda": -10.804439239187491,
+    "+": [
+     " ofrecemos",
+     "？）",
+     " garantiz",
+     " silenci",
+     " asegurado",
+     "lehnen",
+     " concejal",
+     " documentazione",
+     " menudo",
+     "Erreur"
+    ],
+    "-": [
+     "\n",
+     " whereas",
+     " namely",
+     " &",
+     " all",
+     " presently",
+     " of",
+     " than",
+     " and",
+     " so"
+    ]
+   },
+   {
+    "lambda": 6.3551911088327735,
+    "+": [
+     " .",
+     "\n\n",
+     "<|im_end|>",
+     " ,",
+     "\n",
+     " :",
+     " .\"",
+     " \n\n",
+     " )",
+     " ]"
+    ],
+    "-": [
+     "bildungs",
+     "Scoped",
+     "封控",
+     "Leist",
+     " Giêsu",
+     "örder",
+     " concejal",
+     "getStore",
+     "Stunden",
+     "自荐"
+    ]
+   },
+   {
+    "lambda": -5.584303163105188,
+    "+": [
+     " neoliberal",
+     " \"\"\"",
+     " workbook",
+     " favicon",
+     " \"}",
+     " utilisation",
+     " organis",
+     "\"\"\"",
+     "\"",
+     " metab"
+    ],
+    "-": [
+     "<|endoftext|>",
+     "：**",
+     "而降",
+     "线上的",
+     "...**",
+     "сти",
+     " **",
+     "。**",
+     "段的",
+     "两次"
+    ]
+   },
+   {
+    "lambda": -5.316363071148472,
+    "+": [
+     "  \n",
+     " $",
+     "?**",
+     "—",
+     "**",
+     " **",
+     "?*",
+     "...**",
+     "**—",
+     "\"—"
+    ],
+    "-": [
+     "非常多的",
+     "跟",
+     "但是在",
+     "先发",
+     "但是",
+     "有",
+     "多点",
+     "时候",
+     "也是比较",
+     "协"
+    ]
+   },
+   {
+    "lambda": 5.282807386101781,
+    "+": [
+     "在中国",
+     "在中国的",
+     "在日本",
+     "在美国",
+     "在地",
+     "在我国",
+     "在农村",
+     "在广州",
+     "在国内",
+     "在欧洲"
+    ],
+    "-": [
+     " promptly",
+     "えず",
+     "Immediately",
+     " annum",
+     "唯有",
+     " inmediatamente",
+     "如其",
+     "因其",
+     " eventual",
+     " nunca"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     " presently",
+     " enormously",
+     "惟有",
+     " notwithstanding",
+     " admittedly",
+     " invariably",
+     " pared",
+     " afterwards",
+     " ensuing",
+     " outset"
+    ],
+    "-": [
+     "在中国",
+     ":\\\\",
+     "在中国的",
+     "在地",
+     "在这片",
+     "ในประเทศไทย",
+     "在广州",
+     "在广东",
+     " ___",
+     "在哪里"
+    ]
+   },
+   {
+    "+": [
+     "在日本",
+     "在当地",
+     "在西",
+     "在海外",
+     "在国内",
+     "在自己",
+     "在农村",
+     "在黑",
+     "在杭州",
+     "在营"
+    ],
+    "-": [
+     "\n\n",
+     "<|im_end|>",
+     " \n\n",
+     ".\"",
+     " .",
+     " .\"",
+     " .**",
+     " ]",
+     " **.",
+     "\\n"
+    ]
+   },
+   {
+    "+": [
+     "\n",
+     " $",
+     "\n\n",
+     " \n",
+     "  \n",
+     " or",
+     " .",
+     " —",
+     " (",
+     " $\\"
+    ],
+    "-": [
+     " concejal",
+     "先发",
+     " ngây",
+     " actuaciones",
+     " consigui",
+     " anunciado",
+     "之前就",
+     "SetText",
+     "包裹",
+     " recebido"
+    ]
+   },
+   {
+    "+": [
+     "并最终",
+     "сти",
+     "而降",
+     "而未",
+     "希望能",
+     "均未",
+     "单单",
+     "**—",
+     "本该",
+     "这无疑"
+    ],
+    "-": [
+     " \"\"\"",
+     "\"",
+     " .\"",
+     "\"\"\"",
+     " )\"",
+     " ,,",
+     " ”",
+     " \"}",
+     "\")",
+     " \")"
+    ]
+   },
+   {
+    "+": [
+     " in",
+     " ,",
+     " of",
+     " .",
+     " on",
+     " which",
+     " there",
+     " here",
+     " that",
+     " amongst"
+    ],
+    "-": [
+     "？**",
+     "?”,",
+     "？”",
+     "？）",
+     "”،",
+     "柯文哲",
+     "显著提升",
+     "icina",
+     "icité",
+     "志工"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     ".grad",
+     " graves",
+     "uros",
+     "kees",
+     "ulf",
+     "itches",
+     " prochaines",
+     "屠杀",
+     "实地考察",
+     "工的"
+    ],
+    "-": [
+     "s",
+     "３",
+     " signalling",
+     "４",
+     "２",
+     "｜",
+     " specialised",
+     "]**",
+     " personalised",
+     "</"
+    ]
+   },
+   {
+    "+": [
+     "礼仪",
+     "ed",
+     "suite",
+     "花的",
+     "摄像",
+     "芙蓉",
+     " pollen",
+     "enh",
+     "小道",
+     "鲜花"
+    ],
+    "-": [
+     " Leh",
+     " ',",
+     "\\',",
+     " Whilst",
+     " Analyse",
+     " Salam",
+     " Mana",
+     "iban",
+     " Contributions",
+     "&apos"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " in",
+    " of",
+    " .",
+    " at",
+    " for",
+    " ,",
+    " which",
+    " as",
+    " on",
+    " that"
+   ],
+   "-": [
+    "<|fim_suffix|>",
+    " consigui",
+    " concejal",
+    " vengan",
+    " baños",
+    "卸下",
+    "栓",
+    "众志成",
+    " Erwachsen",
+    "量产"
+   ]
+  }
+ },
+ " Paris": {
+  "eigs": [
+   {
+    "lambda": 8.759207054299955,
+    "+": [
+     "Splash",
+     "**–",
+     "ebed",
+     "！**",
+     "沐",
+     "sparse",
+     "orong",
+     "小菜",
+     " ⟨",
+     "Ξ"
+    ],
+    "-": [
+     " Paris",
+     " paris",
+     "Paris",
+     " PARIS",
+     "巴黎",
+     " France",
+     " French",
+     "パリ",
+     ".........",
+     " french"
+    ]
+   },
+   {
+    "lambda": -8.672028675172589,
+    "+": [
+     "Paris",
+     " Paris",
+     "巴黎",
+     " PARIS",
+     " Parigi",
+     " París",
+     " Пари",
+     " 파리",
+     " باريس",
+     "パリ"
+    ],
+    "-": [
+     "s",
+     "\n",
+     "**",
+     "(**",
+     " **",
+     " =",
+     "！**",
+     " eq",
+     " !**",
+     " !!"
+    ]
+   },
+   {
+    "lambda": -6.1605115846608,
+    "+": [
+     " &",
+     "\n",
+     " all",
+     " since",
+     " both",
+     " and",
+     " totally",
+     " two",
+     " four",
+     " presently"
+    ],
+    "-": [
+     " silenci",
+     " menudo",
+     "lehnen",
+     " ofrecemos",
+     " asegurado",
+     " réfléchir",
+     "守护者",
+     " huéspedes",
+     "以下是一些",
+     " garantiz"
+    ]
+   },
+   {
+    "lambda": 5.3899998300410585,
+    "+": [
+     " Strasbourg",
+     " Marseille",
+     " France",
+     " Paris",
+     " travelling",
+     " Toulouse",
+     " Brussels",
+     " Provence",
+     " Zürich",
+     "巴黎"
+    ],
+    "-": [
+     " $($",
+     " nonzero",
+     " DOE",
+     " Slash",
+     ",’”",
+     "\")]",
+     "adata",
+     " FEMA",
+     "”)",
+     " }</"
+    ]
+   },
+   {
+    "lambda": -4.822042300674197,
+    "+": [
+     "村庄",
+     " village",
+     "村民",
+     "农田",
+     "村落",
+     "部落",
+     " tribal",
+     " tribe",
+     "村子",
+     "牧场"
+    ],
+    "-": [
+     " physicists",
+     " Paris",
+     " PARIS",
+     " London",
+     " analy",
+     "巴黎",
+     " paris",
+     " Sarkozy",
+     " Ferrari",
+     " physicist"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     " ﻿",
+     ".........",
+     "\\\"",
+     " ”",
+     " “.",
+     "\\\"\"",
+     " \\\"",
+     "\\\",\\\"",
+     "...”",
+     " https"
+    ],
+    "-": [
+     "s",
+     " **",
+     "ermann",
+     "ёт",
+     "**",
+     " travelling",
+     "：**",
+     "！**",
+     "(**",
+     " (**"
+    ]
+   },
+   {
+    "+": [
+     "椒",
+     "爹",
+     "罡",
+     "麻麻",
+     "村干部",
+     "香菇",
+     "玉米",
+     "婶",
+     "孝",
+     " Cherokee"
+    ],
+    "-": [
+     " Paris",
+     "Paris",
+     "巴黎",
+     " PARIS",
+     " paris",
+     " París",
+     " Пари",
+     " France",
+     " Parigi",
+     "パリ"
+    ]
+   },
+   {
+    "+": [
+     "科幻",
+     "鲨",
+     "量子",
+     "实验室",
+     "化工",
+     "机甲",
+     " cuán",
+     "算力",
+     "屏蔽",
+     " экран"
+    ],
+    "-": [
+     " of",
+     " which",
+     " the",
+     " and",
+     " same",
+     " ,",
+     " (",
+     " .",
+     " that",
+     " namely"
+    ]
+   },
+   {
+    "+": [
+     " AOL",
+     " physicists",
+     " FDA",
+     " Bloomberg",
+     " software",
+     " analyzer",
+     " pdb",
+     " CEOs",
+     " filings",
+     " microsoft"
+    ],
+    "-": [
+     "村庄",
+     " village",
+     "村落",
+     "村民",
+     " villages",
+     "彝族",
+     "农田",
+     "村子",
+     "与当地",
+     "羌"
+    ]
+   },
+   {
+    "+": [
+     "—including",
+     "—with",
+     " Tribal",
+     "—and",
+     "–and",
+     " Hawaii",
+     " tremendous",
+     " ensuing",
+     "…and",
+     "—as"
+    ],
+    "-": [
+     " **「",
+     " :\",",
+     " **€",
+     "脱欧",
+     " personalised",
+     " utilisation",
+     "uropean",
+     " analyse",
+     " =>",
+     " realised"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     " **",
+     "�",
+     "Ω",
+     " nonexistent",
+     " **“",
+     "�",
+     "**",
+     "endum",
+     "undet",
+     " caram"
+    ],
+    "-": [
+     ".\"</",
+     "...\"",
+     "\"</",
+     " ...\"",
+     ".\"'",
+     "\";",
+     " (...",
+     "\".",
+     "...\",",
+     " ......"
+    ]
+   },
+   {
+    "+": [
+     "s",
+     "拙",
+     "产销",
+     " pej",
+     " (-",
+     "uers",
+     " [-",
+     " prag",
+     " lign",
+     "ynd"
+    ],
+    "-": [
+     "五星红旗",
+     " Siri",
+     "影片",
+     "unlock",
+     "电影",
+     "升旗",
+     "等资料",
+     "太阳能电池",
+     "运动会",
+     "升旗仪式"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " Paris",
+    "Paris",
+    "巴黎",
+    " PARIS",
+    " paris",
+    " London",
+    " París",
+    " France",
+    " Berlin",
+    " French"
+   ],
+   "-": [
+    "麻麻",
+    "罡",
+    "兽药",
+    "邪教",
+    "香菇",
+    "猛",
+    "揍",
+    "族长",
+    "管护",
+    "教官"
+   ]
+  }
+ },
+ " France": {
+  "eigs": [
+   {
+    "lambda": 8.963082465790093,
+    "+": [
+     " France",
+     "France",
+     " FRANCE",
+     "法国",
+     " france",
+     " French",
+     " Francia",
+     "法國",
+     " Paris",
+     " french"
+    ],
+    "-": [
+     "ingk",
+     "兴华",
+     "DeviceInfo",
+     "粕",
+     " Hawaiian",
+     "aviors",
+     "耙",
+     "Dash",
+     "罡",
+     "ekan"
+    ]
+   },
+   {
+    "lambda": -7.753665861499309,
+    "+": [
+     "的",
+     " ${",
+     " ^",
+     "  ",
+     " ,",
+     "\n\n\n",
+     " =",
+     "imal",
+     " ✓",
+     " Gow"
+    ],
+    "-": [
+     "…*",
+     "France",
+     " France",
+     " Франция",
+     "…**",
+     "…»",
+     "...*",
+     "…”",
+     "…).",
+     "……。"
+    ]
+   },
+   {
+    "lambda": -6.348656455106647,
+    "+": [
+     "\n",
+     " &",
+     " and",
+     " two",
+     " both",
+     " four",
+     " since",
+     " presently",
+     " namely",
+     " all"
+    ],
+    "-": [
+     " silenci",
+     " asegurado",
+     " garantiz",
+     " réfléchir",
+     "lehnen",
+     " ofrecemos",
+     "守护者",
+     "？）",
+     " Упа",
+     " menudo"
+    ]
+   },
+   {
+    "lambda": 6.126572198704879,
+    "+": [
+     " `$",
+     " $?",
+     " __",
+     " \\\"$",
+     " \n        \n",
+     "\n            \n",
+     "\n        \n",
+     " $($",
+     "`)",
+     "\"`"
+    ],
+    "-": [
+     " Luxembourg",
+     "西欧",
+     " Portugal",
+     " Belgian",
+     "欧洲",
+     " organising",
+     " Rotterdam",
+     " organised",
+     " Switzerland",
+     " Zürich"
+    ]
+   },
+   {
+    "lambda": -5.603118008290344,
+    "+": [
+     " township",
+     " county",
+     " Township",
+     " town",
+     " County",
+     " district",
+     " District",
+     "县",
+     " village",
+     "-town"
+    ],
+    "-": [
+     " cosmic",
+     "宇宙",
+     " evolutionary",
+     "科幻",
+     " global",
+     "宇宙的",
+     " cosmos",
+     " spacecraft",
+     " worlds",
+     "地球上"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     " cosmic",
+     " evolutionary",
+     " relativ",
+     " world",
+     " Einstein",
+     "宇宙",
+     " worldwide",
+     " cosm",
+     " Cosmic",
+     " global"
+    ],
+    "-": [
+     " county",
+     " village",
+     " County",
+     "县",
+     " town",
+     " Township",
+     " township",
+     "County",
+     "county",
+     " شهرستان"
+    ]
+   },
+   {
+    "+": [
+     " Municipal",
+     " county",
+     " town",
+     " County",
+     " district",
+     " District",
+     " township",
+     " City",
+     " municipal",
+     " Township"
+    ],
+    "-": [
+     "科幻",
+     "宇宙",
+     "科学家",
+     "外星人",
+     " cosmic",
+     "星球",
+     "科學家",
+     "星人",
+     "科幻小说",
+     "科技感"
+    ]
+   },
+   {
+    "+": [
+     "…*",
+     "splash",
+     ">`",
+     "…**",
+     "…”",
+     "__);",
+     "...*",
+     "screen",
+     "tang",
+     "screens"
+    ],
+    "-": [
+     " neighbouring",
+     " organisation",
+     " organis",
+     " organise",
+     " organised",
+     " Belgian",
+     " organising",
+     " favour",
+     " recognised",
+     " realised"
+    ]
+   },
+   {
+    "+": [
+     " France",
+     "France",
+     " FRANCE",
+     "法国",
+     " Francia",
+     "法國",
+     " france",
+     " French",
+     " Франция",
+     " Франции"
+    ],
+    "-": [
+     "ighborhood",
+     " neighborhood",
+     "兴华",
+     "ounsel",
+     "耙",
+     "粕",
+     " getMenu",
+     "小菜",
+     "adaan",
+     "敬老"
+    ]
+   },
+   {
+    "+": [
+     "摩洛哥",
+     "西欧",
+     "жё",
+     " лёг",
+     "欧盟",
+     "克罗地亚",
+     " Luxembourg",
+     "亿欧元",
+     "土耳其",
+     "意大利"
+    ],
+    "-": [
+     "\n",
+     " $",
+     " .",
+     "\n\n",
+     " \n",
+     " __",
+     " @",
+     " )",
+     " ,",
+     " awhile"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     " equipments",
+     "emens",
+     " plugs",
+     "电力系统",
+     "-users",
+     "插头",
+     " Ukr",
+     "idar",
+     "-machine",
+     " machines"
+    ],
+    "-": [
+     " Letter",
+     " Trail",
+     " [\"",
+     " Bounty",
+     " Tav",
+     " [_",
+     "�",
+     "β",
+     " β",
+     " Colon"
+    ]
+   },
+   {
+    "+": [
+     " �",
+     "––",
+     " […]",
+     "\"--",
+     "ing",
+     "ity",
+     "[…",
+     "–and",
+     "…]",
+     " […"
+    ],
+    "-": [
+     "杀的",
+     "射",
+     "**",
+     "/constants",
+     "密的",
+     " **",
+     "密",
+     "消防安全",
+     " Newtown",
+     "密室"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " France",
+    "France",
+    " Europe",
+    " Germany",
+    " Britain",
+    " Italy",
+    " FRANCE",
+    " Spain",
+    " England",
+    "法国"
+   ],
+   "-": [
+    "亢",
+    "楼道",
+    "ohana",
+    "罡",
+    "啦啦",
+    "敬老",
+    "珈",
+    "宿",
+    "ounsel",
+    "椿"
+   ]
+  }
+ },
+ " war": {
+  "eigs": [
+   {
+    "lambda": 7.444226082071549,
+    "+": [
+     " war",
+     "war",
+     " War",
+     "\\\"",
+     " warfare",
+     "战争",
+     " \\\"",
+     " wars",
+     "战的",
+     "\\\"\""
+    ],
+    "-": [
+     "垂",
+     "汲",
+     " Büh",
+     "漱",
+     " concejal",
+     " Cork",
+     " Behaviour",
+     "�",
+     " Stutt",
+     "高音"
+    ]
+   },
+   {
+    "lambda": -7.4429690855339885,
+    "+": [
+     " war",
+     "war",
+     "War",
+     "-war",
+     "战争",
+     " War",
+     "战",
+     "战争的",
+     "_war",
+     "战火"
+    ],
+    "-": [
+     " ◇",
+     " Example",
+     "s",
+     " →",
+     " ✅",
+     " behaviour",
+     " )",
+     " Figure",
+     " Σ",
+     " α"
+    ]
+   },
+   {
+    "lambda": -6.7479454434072315,
+    "+": [
+     " asegurado",
+     "？）",
+     " ofrecemos",
+     "lehnen",
+     " silenci",
+     " heridos",
+     " garantiz",
+     " concejal",
+     " documentazione",
+     " réfléchir"
+    ],
+    "-": [
+     "\n",
+     " &",
+     " whereas",
+     " and",
+     " --",
+     " all",
+     " totally",
+     " both",
+     " so",
+     " having"
+    ]
+   },
+   {
+    "lambda": 5.903957549014493,
+    "+": [
+     " military",
+     " warfare",
+     " army",
+     " militar",
+     " armies",
+     " Military",
+     "战争",
+     "军事",
+     "战争的",
+     " troops"
+    ],
+    "-": [
+     " curated",
+     "橱",
+     " Etsy",
+     " aggregator",
+     " Lyft",
+     " showroom",
+     " webcam",
+     " Spotify",
+     " Pinterest",
+     " Instagram"
+    ]
+   },
+   {
+    "lambda": 4.62794954421545,
+    "+": [
+     "\n\n",
+     " \n\n",
+     "\n",
+     " \n",
+     "<|im_end|>",
+     " .",
+     " ,",
+     "\n \n",
+     " )",
+     " \n\n\n"
+    ],
+    "-": [
+     "—with",
+     "—in",
+     "**—",
+     "—to",
+     "Scoped",
+     "—as",
+     " Estratég",
+     "—including",
+     " Czę",
+     " Ép"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     "Σ",
+     "₂",
+     " Général",
+     "α",
+     " Groß",
+     " Σ",
+     "β",
+     " Behaviour",
+     " Asyl",
+     "uß"
+    ],
+    "-": [
+     "\\\"\"",
+     "\\\"",
+     " :\\",
+     " \\\"",
+     ".\\\"",
+     ",\\\"",
+     "\\n",
+     "\\\"\\",
+     " \\\"$",
+     "war"
+    ]
+   },
+   {
+    "+": [
+     "\n\n",
+     "<|im_end|>",
+     "\n",
+     " army",
+     " \n\n",
+     " ,",
+     " ..",
+     " .",
+     " enemy",
+     " military"
+    ],
+    "-": [
+     "一如既往地",
+     "PropertyDescriptor",
+     "—with",
+     "Scoped",
+     " Bánh",
+     " Gastronom",
+     "昵",
+     "istogram",
+     "—including",
+     "Profiler"
+    ]
+   },
+   {
+    "+": [
+     "\n",
+     " </",
+     " \n",
+     " funky",
+     " linda",
+     " cd",
+     " ebay",
+     " thai",
+     " js",
+     " spotify"
+    ],
+    "-": [
+     " Warfare",
+     "战争的",
+     " warfare",
+     "战争",
+     "战场上",
+     " War",
+     "战",
+     "戰",
+     " Krieg",
+     "戰爭"
+    ]
+   },
+   {
+    "+": [
+     "preise",
+     " garantiz",
+     " asegurado",
+     "lehnen",
+     " concejal",
+     " acercar",
+     " documentazione",
+     " silenci",
+     " menudo",
+     "确保安全"
+    ],
+    "-": [
+     "\n",
+     " of",
+     " &",
+     " whereas",
+     " which",
+     " namely",
+     " having",
+     " that",
+     " and",
+     " ("
+    ]
+   },
+   {
+    "+": [
+     " war",
+     "战争",
+     "战争的",
+     " warfare",
+     " War",
+     " militar",
+     " wars",
+     " military",
+     " Warfare",
+     "戰爭"
+    ],
+    "-": [
+     " https",
+     " faucet",
+     " showroom",
+     " dataset",
+     " devs",
+     " validators",
+     " presenter",
+     " URL",
+     " metadata",
+     " DSL"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     " methane",
+     " preparations",
+     "燃料",
+     "pipeline",
+     "lub",
+     " champagne",
+     "tee",
+     "chinen",
+     "总工程师",
+     "罐头"
+    ],
+    "-": [
+     " **(",
+     " **+",
+     " **\"",
+     " **“",
+     " **",
+     "✅",
+     "❤️",
+     " �",
+     " **-",
+     " ✅"
+    ]
+   },
+   {
+    "+": [
+     "…).",
+     "清流",
+     "等资源",
+     "...).",
+     "…,",
+     "百强",
+     ",…",
+     "甘甜",
+     "ùn",
+     " NYT"
+    ],
+    "-": [
+     " teachers",
+     " teacher",
+     " precautions",
+     " instructors",
+     "omet",
+     "学期",
+     " adolescent",
+     " school",
+     " pupils",
+     " protective"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " war",
+    " wars",
+    " warfare",
+    "war",
+    " War",
+    "战争",
+    " battle",
+    " enemy",
+    "战争的",
+    " military"
+   ],
+   "-": [
+    "猕猴",
+    "镜面",
+    "挂牌",
+    "洁",
+    "预约",
+    "聆",
+    "俐",
+    " concejal",
+    "祐",
+    "髮"
+   ]
+  }
+ },
+ " music": {
+  "eigs": [
+   {
+    "lambda": 9.378090670402152,
+    "+": [
+     "保全",
+     "狼狈",
+     "视察",
+     " mạo",
+     "Viewport",
+     "欺诈",
+     "暴晒",
+     "�",
+     "鳖",
+     "财险"
+    ],
+    "-": [
+     " music",
+     " musical",
+     " songs",
+     " Music",
+     " song",
+     "的音乐",
+     "音乐",
+     " melody",
+     "music",
+     " audio"
+    ]
+   },
+   {
+    "lambda": 7.326390007735725,
+    "+": [
+     " \n\n\n",
+     " \n\n",
+     " ducks",
+     " ‚",
+     " \n\n\n\n",
+     " law",
+     " {'",
+     " '''",
+     "iversity",
+     " federation"
+    ],
+    "-": [
+     "\"**",
+     "echo",
+     "肥皂",
+     "电台",
+     "播音",
+     "高音",
+     "**。",
+     " раді",
+     "Echo",
+     "sound"
+    ]
+   },
+   {
+    "lambda": -7.317334816603474,
+    "+": [
+     " $",
+     " $$",
+     " $\"",
+     "$",
+     " $.",
+     " =",
+     " \".",
+     " \"$",
+     " -.",
+     " +"
+    ],
+    "-": [
+     "/music",
+     "Music",
+     "_music",
+     " музыка",
+     "音乐",
+     "的音乐",
+     " music",
+     " музыки",
+     "usic",
+     "音樂"
+    ]
+   },
+   {
+    "lambda": -5.6378985751573,
+    "+": [
+     " huéspedes",
+     " ofrecemos",
+     "lehnen",
+     "preise",
+     " silenci",
+     "舞者",
+     " menudo",
+     " concejal",
+     "内部",
+     " ristruttur"
+    ],
+    "-": [
+     "\n",
+     " and",
+     " both",
+     " all",
+     " since",
+     " whereas",
+     " of",
+     " &",
+     " so",
+     " that"
+    ]
+   },
+   {
+    "lambda": 4.7083987448580515,
+    "+": [
+     "此起彼",
+     "/Observable",
+     "leistungs",
+     "跺",
+     "聴",
+     "Leist",
+     "getNode",
+     "Latch",
+     "Scoped",
+     "高音"
+    ],
+    "-": [
+     "\n\n",
+     " \n\n",
+     "<|im_end|>",
+     "\n",
+     " .\"",
+     " .",
+     " \n",
+     "\n \n",
+     " ]",
+     " .**"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     " music",
+     "/music",
+     " Music",
+     " musical",
+     "的音乐",
+     "Music",
+     " Musik",
+     " musicale",
+     "音乐",
+     " musik"
+    ],
+    "-": [
+     "\".**",
+     "蛛",
+     " $_",
+     "视察",
+     "赔偿原告",
+     "始皇",
+     "inspection",
+     "βά",
+     "agri",
+     " $$"
+    ]
+   },
+   {
+    "+": [
+     "高音",
+     "伴奏",
+     "声乐",
+     " الموسيقى",
+     "音乐",
+     "歌声",
+     "收音",
+     "歌手",
+     "旋律",
+     "演奏"
+    ],
+    "-": [
+     "\n",
+     "\n\n",
+     " .",
+     " ,",
+     " \n",
+     "\n\n\n",
+     " which",
+     " namely",
+     " of",
+     " \n\n"
+    ]
+   },
+   {
+    "+": [
+     "—including",
+     "…*",
+     "—",
+     "—and",
+     "…**",
+     " fighting",
+     " \n",
+     " war",
+     "…",
+     " …"
+    ],
+    "-": [
+     " Validator",
+     "ovice",
+     "共治",
+     "教职",
+     "然大",
+     "utzer",
+     " Validators",
+     "太守",
+     "狗粮",
+     "托育"
+    ]
+   },
+   {
+    "+": [
+     "Scoped",
+     "�",
+     "可疑",
+     " Cott",
+     " Stav",
+     "中招",
+     "保全",
+     " Opport",
+     "做实",
+     "ТП"
+    ],
+    "-": [
+     " music",
+     " musical",
+     " songs",
+     " song",
+     "music",
+     " \n\n",
+     "的音乐",
+     "音乐",
+     "<|im_end|>",
+     " audio"
+    ]
+   },
+   {
+    "+": [
+     "自身风险",
+     "ardia",
+     "管理法",
+     "맵",
+     "ipline",
+     "法律知识",
+     " descuentos",
+     "科学与工程",
+     " юри",
+     "内部管理"
+    ],
+    "-": [
+     " $",
+     "$",
+     " $\\",
+     " alt",
+     " Radio",
+     " radio",
+     "es",
+     " microphone",
+     " $\"",
+     " -"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     "…**",
+     " **“",
+     "**",
+     "”**",
+     "\"**",
+     "“-",
+     "**”",
+     "**-",
+     "”…",
+     "”**,"
+    ],
+    "-": [
+     "omatis",
+     " defence",
+     "atis",
+     "adie",
+     " traumatis",
+     " wounded",
+     "妇人",
+     "倒下",
+     "\n",
+     " women"
+    ]
+   },
+   {
+    "+": [
+     "与普通",
+     " baths",
+     "与被告",
+     "门上",
+     " galleries",
+     " partitions",
+     " colours",
+     " receptions",
+     "ństw",
+     "漆"
+    ],
+    "-": [
+     " #\"",
+     "!”",
+     "\"!",
+     "zinho",
+     "!\"",
+     "!\")",
+     "\"):",
+     "#\"",
+     ")”",
+     ")\":"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " music",
+    " musical",
+    " Music",
+    "music",
+    " songs",
+    " musicians",
+    "的音乐",
+    "Music",
+    "音乐",
+    " musik"
+   ],
+   "-": [
+    "索赔",
+    "可疑",
+    "溃",
+    "受害",
+    "保全",
+    "鳖",
+    "受损",
+    "َّا",
+    "病死",
+    "损毁"
+   ]
+  }
+ },
+ " he": {
+  "eigs": [
+   {
+    "lambda": -9.542287123661001,
+    "+": [
+     "\n",
+     " namely",
+     " presently",
+     " whereas",
+     " &",
+     " all",
+     " of",
+     " and",
+     " whereby",
+     " so"
+    ],
+    "-": [
+     " asegurado",
+     " ofrecemos",
+     "？）",
+     " silenci",
+     " documentazione",
+     "守护者",
+     " garantiz",
+     " huéspedes",
+     "？**",
+     "Erreur"
+    ]
+   },
+   {
+    "lambda": 6.5393035504105415,
+    "+": [
+     "\n\n",
+     " \n\n",
+     "\n",
+     "<|im_end|>",
+     " )",
+     " .",
+     " ,",
+     " \n",
+     " ]",
+     "\n \n"
+    ],
+    "-": [
+     "Scoped",
+     "bildungs",
+     "schirm",
+     "plätze",
+     "rezent",
+     "下挫",
+     "居酒屋",
+     "züg",
+     "leistungs",
+     "解禁"
+    ]
+   },
+   {
+    "lambda": -5.3644233373321395,
+    "+": [
+     "她们",
+     "她们的",
+     " she",
+     " herself",
+     "她們",
+     "she",
+     "她也",
+     "她就",
+     "She",
+     " She"
+    ],
+    "-": [
+     "ólico",
+     "ábio",
+     " his",
+     " him",
+     "ustus",
+     " himself",
+     "iado",
+     "amico",
+     " cerebr",
+     "óstico"
+    ]
+   },
+   {
+    "lambda": 5.215192521529439,
+    "+": [
+     " \n\n\n\n",
+     "   \n",
+     " \n\n\n",
+     "\n\n\n\n",
+     "   \n\n",
+     "<|im_end|>",
+     " \n\n",
+     "  \n\n",
+     " \n\n\n\n\n",
+     "\n \n"
+    ],
+    "-": [
+     " himself",
+     " his",
+     "他觉得",
+     "他要",
+     "他已经",
+     " they",
+     "—he",
+     ",",
+     " he",
+     "—who"
+    ]
+   },
+   {
+    "lambda": -5.079475850776029,
+    "+": [
+     "她们",
+     " herself",
+     " node",
+     " she",
+     " nodes",
+     " girls",
+     "她們",
+     "她们的",
+     " women",
+     " her"
+    ],
+    "-": [
+     "—he",
+     "他和",
+     "他用",
+     "他的",
+     "把他的",
+     "他突然",
+     "他还是",
+     "他与",
+     "他还",
+     "他所"
+    ]
+   }
+  ],
+  "rotated_control": [
+   {
+    "+": [
+     " his",
+     " himself",
+     "—he",
+     "他觉得",
+     "他要",
+     " he",
+     "他已经",
+     "他还是",
+     "他把",
+     "他被"
+    ],
+    "-": [
+     "母女",
+     "   \n",
+     "\n \n",
+     " ela",
+     " node",
+     "node",
+     "她们",
+     "妇科",
+     "\n",
+     " :\\"
+    ]
+   },
+   {
+    "+": [
+     ":\\\"",
+     "\\\"\",",
+     "她已经",
+     "学姐",
+     "她们",
+     " skincare",
+     "讓她",
+     "她自己",
+     "彼女は",
+     " menudo"
+    ],
+    "-": [
+     " presently",
+     " principally",
+     "\n",
+     " chiefly",
+     " &",
+     " ­",
+     " lest",
+     " 、",
+     " ensuing",
+     " namely"
+    ]
+   },
+   {
+    "+": [
+     " \"\"\"",
+     "ólico",
+     "ábio",
+     " %\"",
+     "iado",
+     " urgen",
+     "\n                        \n",
+     " ?\",",
+     " \n        \n",
+     "ustus"
+    ],
+    "-": [
+     " she",
+     "她们",
+     "她们的",
+     " herself",
+     "她們",
+     " her",
+     " She",
+     "她也",
+     "she",
+     "她就"
+    ]
+   },
+   {
+    "+": [
+     " behaviour",
+     " Berlusconi",
+     " Vida",
+     " modelling",
+     " Cad",
+     " socially",
+     " Nicholson",
+     " Vip",
+     " Caroline",
+     " behaviours"
+    ],
+    "-": [
+     "  \n\n",
+     " \n\n\n\n",
+     "  \n\n\n",
+     "<|im_end|>",
+     " _____",
+     " \n\n",
+     "\n\n\n\n",
+     "   \n\n",
+     " ____",
+     " \n\n\n"
+    ]
+   },
+   {
+    "+": [
+     "\n\n",
+     "\n",
+     " .",
+     " ,",
+     " )",
+     " \n",
+     " \n\n",
+     " ]",
+     "<|im_end|>",
+     " .\""
+    ],
+    "-": [
+     "Scoped",
+     "bildungs",
+     "解禁",
+     " escas",
+     "plätze",
+     "一如既往地",
+     " concejal",
+     " anunciado",
+     "rezent",
+     "schirm"
+    ]
+   }
+  ],
+  "random_dir_control": [
+   {
+    "+": [
+     "bury",
+     "存放在",
+     "::_",
+     " humour",
+     " &_",
+     " depos",
+     "umbnail",
+     " Pilk",
+     " secrecy",
+     "考务"
+    ],
+    "-": [
+     " Favor",
+     "边角",
+     " favor",
+     "favor",
+     "زی",
+     "膀",
+     "cí",
+     " trade",
+     "kau",
+     " favors"
+    ]
+   },
+   {
+    "+": [
+     "alej",
+     "leistungen",
+     "öll",
+     "houden",
+     "不减",
+     "Reload",
+     "_contrib",
+     "挽救",
+     "防腐",
+     "极其"
+    ],
+    "-": [
+     "訊",
+     "sw",
+     " migrant",
+     "消息",
+     "ization",
+     " migrating",
+     " Seoul",
+     "sponsor",
+     "Japan",
+     "s"
+    ]
+   }
+  ],
+  "lens_token_dir_self": {
+   "+": [
+    " he",
+    " his",
+    " him",
+    " himself",
+    " it",
+    " they",
+    " He",
+    " which",
+    " that",
+    " then"
+   ],
+   "-": [
+    "żą",
+    "közi",
+    "解禁",
+    " Dominicana",
+    " Clínica",
+    "极具",
+    " Außen",
+    "ATRIX",
+    "_CSV",
+    "Plattform"
+   ]
+  }
+ }
+}
