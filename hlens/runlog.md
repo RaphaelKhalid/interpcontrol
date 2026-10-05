@@ -141,3 +141,135 @@
 [22:47:09] [E1] draw 0 G=3.0: I_meas +2.325 | span H 1.00 Hw 1.00 AGOP 0.99 cov 0.99 mg 0.10 (null H 0.02/0.23) | pair H True Hw True AGOP False cov False | gate lam 213.41 vs top |lam| 11.72 | 41s
 [22:47:59] [E1] draw 1 G=0.1: I_meas +0.102 | span H 0.79 Hw 0.77 AGOP 0.04 cov 0.04 mg 0.00 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 6.74 vs top |lam| 11.72 | 51s
 [22:48:41] [E1] draw 1 G=0.3: I_meas +0.300 | span H 0.99 Hw 0.99 AGOP 0.25 cov 0.25 mg 0.00 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 20.21 vs top |lam| 11.72 | 42s
+[22:49:39] [E1] draw 1 G=1.0: I_meas +0.925 | span H 1.00 Hw 1.00 AGOP 0.90 cov 0.90 mg 0.01 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 67.38 vs top |lam| 11.72 | 58s
+[22:50:25] [E1] draw 1 G=3.0: I_meas +2.271 | span H 1.00 Hw 1.00 AGOP 0.99 cov 0.99 mg 0.06 (null H 0.02/0.25) | pair H True Hw True AGOP False cov False | gate lam 202.15 vs top |lam| 11.72 | 45s
+[22:51:18] [E1] draw 2 G=0.1: I_meas +0.099 | span H 0.84 Hw 0.75 AGOP 0.04 cov 0.04 mg 0.01 (null H 0.03/0.22) | pair H True Hw True AGOP False cov True | gate lam 7.25 vs top |lam| 11.72 | 53s
+[22:51:58] [E1] draw 2 G=0.3: I_meas +0.299 | span H 0.99 Hw 0.98 AGOP 0.32 cov 0.34 mg 0.01 (null H 0.03/0.22) | pair H True Hw True AGOP False cov True | gate lam 21.74 vs top |lam| 11.72 | 40s
+[22:52:41] [E1] draw 2 G=1.0: I_meas +1.040 | span H 1.00 Hw 1.00 AGOP 0.91 cov 0.91 mg 0.02 (null H 0.03/0.22) | pair H True Hw True AGOP False cov False | gate lam 72.47 vs top |lam| 11.72 | 43s
+[22:53:26] [E1] draw 2 G=3.0: I_meas +2.968 | span H 1.00 Hw 1.00 AGOP 0.99 cov 0.99 mg 0.06 (null H 0.03/0.22) | pair H True Hw True AGOP True cov True | gate lam 217.40 vs top |lam| 11.72 | 46s
+[22:53:26] [E1] done 605s; alloc 2854 MB, peak 4382 MB
+[22:54:17] [organism] step 0/300 loss 1.437 acc 0.59 (21s)
+[22:56:38] [organism] step 0/300 loss 1.439 acc 0.56 (11s)
+[22:57:22] [organism] step 25/300 loss 0.365 acc 0.75 (55s)
+[22:58:12] [organism] step 50/300 loss 0.390 acc 0.84 (105s)
+[22:58:55] [organism] step 75/300 loss 0.032 acc 1.00 (148s)
+[22:59:39] [organism] step 100/300 loss 0.026 acc 1.00 (192s)
+[23:00:23] [organism] step 125/300 loss 0.042 acc 1.00 (236s)
+[23:01:06] [organism] step 150/300 loss 0.093 acc 0.94 (279s)
+[23:01:49] [organism] step 175/300 loss 0.198 acc 0.88 (322s)
+[23:02:32] [organism] step 200/300 loss 0.021 acc 1.00 (365s)
+[23:03:15] [organism] step 225/300 loss 0.052 acc 0.97 (408s)
+[23:03:57] [organism] step 250/300 loss 0.085 acc 0.94 (450s)
+[23:04:40] [organism] step 275/300 loss 0.175 acc 0.94 (493s)
+[23:05:22] [organism] step 299/300 loss 0.089 acc 0.97 (535s)
+[23:05:26] [organism] saved merged model to C:\Users\rapha\models\hlens-pirate-0.8b (539s)
+[23:06:16] [organism eval hlens-pirate-0.8b] AB=00: follow 0.95 L -9.87 | AB=01: follow 0.93 L -6.41 | AB=10: follow 0.97 L -9.58 | AB=11: follow 0.95 L +6.03
+[23:07:11] [gate] behaviour on analysis set: 00: lie 0.03 L -9.21 | 01: lie 0.02 L -8.29 | 10: lie 0.03 L -10.21 | 11: lie 0.98 L +7.11
+[23:07:17] [gate] L4: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:07:23] [gate] L6: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:07:29] [gate] L8: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.05 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:07:33] [gate] L10: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.05 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:07:37] [gate] L12: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.05 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:07:40] [gate] L14: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:07:43] [gate] L16: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:07:45] [gate] L18: lie 00 0.03 +A 0.03 +B 0.00 +A+B 0.00 | 10+B 0.06 01+A 0.02 11-A 0.98 11-B 0.98 | AND -0.03
+[23:07:45] [gate] chosen layer 4 (AND score +0.00); 82s
+[23:07:57] [gate L4] |rA| 2.681 |rB| 3.019 cos(rA,rB) +0.82 cos(rA,dA) -0.02 cos(rB,dB) +0.04; random span 0.010
+[23:08:59] [gate] behaviour on analysis set: 00: lie 0.03 L -9.21 | 01: lie 0.02 L -8.29 | 10: lie 0.03 L -10.21 | 11: lie 0.98 L +7.11
+[23:09:00] [gate] L19: lie 00 0.03 +A 0.03 +B 0.00 +A+B 0.00 | 10+B 0.06 01+A 0.02 11-A 0.98 11-B 0.98 | AND -0.03
+[23:09:01] [gate] L20: lie 00 0.03 +A 0.03 +B 0.00 +A+B 0.00 | 10+B 0.06 01+A 0.02 11-A 0.98 11-B 0.98 | AND -0.03
+[23:09:02] [gate] L21: lie 00 0.03 +A 0.03 +B 0.00 +A+B 0.00 | 10+B 0.05 01+A 0.02 11-A 0.98 11-B 1.00 | AND -0.03
+[23:09:02] [gate] L22: lie 00 0.03 +A 0.03 +B 0.02 +A+B 0.00 | 10+B 0.05 01+A 0.02 11-A 0.98 11-B 1.00 | AND -0.03
+[23:09:02] [gate] scan only; best layer 19 (AND -0.03)
+[23:12:12] [gate2] L2: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.97 11-A 0.00 11-B 0.98 | AND +0.00
+[23:12:18] [gate2] L4: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.98 11-A 0.00 11-B 0.98 | AND +0.00
+[23:12:24] [gate2] L6: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.05 01+A 0.98 11-A 0.00 11-B 1.00 | AND +0.00
+[23:12:29] [gate2] L8: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.06 | 10+B 0.05 01+A 0.97 11-A 0.00 11-B 0.98 | AND +0.03
+[23:12:33] [gate2] L10: lie 00 0.03 +A 0.03 +B 0.02 +A+B 0.09 | 10+B 0.05 01+A 0.91 11-A 0.98 11-B 1.00 | AND +0.06
+[23:12:37] [gate2] L12: lie 00 0.03 +A 0.03 +B 0.02 +A+B 0.02 | 10+B 0.05 01+A 0.02 11-A 0.98 11-B 1.00 | AND -0.02
+[23:12:41] [gate2] L14: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:12:41] [gate2] PRECONDITION FAILED (best AND +0.06 at L10); no analysis
+[23:14:10] [gate2] L2: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.06 | 10+B 0.05 01+A 0.97 11-A 0.00 11-B 1.00 | AND +0.03
+[23:14:16] [gate2] L4: lie 00 0.03 +A 0.03 +B 0.00 +A+B 0.06 | 10+B 0.05 01+A 0.98 11-A 0.00 11-B 1.00 | AND +0.03
+[23:14:22] [gate2] L6: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.12 | 10+B 0.06 01+A 0.98 11-A 0.00 11-B 0.72 | AND +0.09
+[23:14:27] [gate2] L8: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.11 | 10+B 0.08 01+A 0.97 11-A 0.00 11-B 0.66 | AND +0.08
+[23:14:32] [gate2] L10: lie 00 0.03 +A 0.03 +B 0.00 +A+B 0.06 | 10+B 0.05 01+A 0.91 11-A 0.98 11-B 0.94 | AND +0.03
+[23:14:36] [gate2] L12: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.05 01+A 0.02 11-A 0.98 11-B 1.00 | AND +0.00
+[23:14:39] [gate2] L14: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:14:39] [gate2] PRECONDITION FAILED (best AND +0.09 at L6); no analysis
+[23:18:36] [gate2] L4: lie 00 0.03 +A 0.03 +B 0.23 +A+B 0.56 | 10+B 0.72 01+A 0.98 11-A 0.00 11-B 0.06 | AND +0.33
+[23:18:42] [gate2] L6: lie 00 0.03 +A 0.03 +B 0.20 +A+B 0.52 | 10+B 0.59 01+A 0.98 11-A 0.00 11-B 0.17 | AND +0.31
+[23:18:47] [gate2] L8: lie 00 0.03 +A 0.03 +B 0.14 +A+B 0.83 | 10+B 0.86 01+A 0.97 11-A 0.00 11-B 0.03 | AND +0.69
+[23:18:52] [gate2] L10: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.27 | 10+B 0.86 01+A 0.91 11-A 0.98 11-B 0.03 | AND +0.23
+[23:18:52] [gate2] chosen layer 8 (AND +0.69); 59s
+[23:19:02] [gate2 L8] |rA| 1.985 |rB| 9.645 |dA| 2.20 |dB| 2.87 cos(rA,dA) +0.34 cos(rB,dB) +0.19; random span 0.0049
+[23:20:54] [gate2 L8] H2_raw_00      span(rA,rB) 0.25 [rA 0.00 rB 0.50] span(dA,dB) 0.02
+[23:22:11] [gate2 L8] H2_white_00    span(rA,rB) 0.15 [rA 0.00 rB 0.31] span(dA,dB) 0.00
+[23:24:21] [gate2 L8] H2_raw_all     span(rA,rB) 0.15 [rA 0.01 rB 0.29] span(dA,dB) 0.03
+[23:26:09] [gate2 L8] H2_white_all   span(rA,rB) 0.15 [rA 0.02 rB 0.27] span(dA,dB) 0.00
+[23:26:09] [gate2 L8] meangrad_00    span(rA,rB) 0.40 [rA 0.01 rB 0.79] span(dA,dB) 0.01
+[23:26:10] [gate2 L8] AGOP_00        span(rA,rB) 0.42 [rA 0.01 rB 0.84] span(dA,dB) 0.01
+[23:26:11] [gate2 L8] gradcov_00     span(rA,rB) 0.31 [rA 0.00 rB 0.62] span(dA,dB) 0.01
+[23:26:13] [gate2 L8] PCA_00         span(rA,rB) 0.02 [rA 0.01 rB 0.02] span(dA,dB) 0.10
+[23:26:14] [gate2 L8] AGOP_white_00  span(rA,rB) 0.45 [rA 0.01 rB 0.90] span(dA,dB) 0.00
+[23:28:03] [gate2 L8] Hbc_raw_00     span(rA,rB) 0.41 [rA 0.41 rB 0.60] span(dA,dB) 0.41
+[23:29:16] [gate2 L8] Hbc_white_00   span(rA,rB) 0.49 [rA 0.57 rB 0.71] span(dA,dB) 0.49
+[23:29:16] [gate2 L8] AGOPbc_00      span(rA,rB) 0.62 [rA 0.67 rB 0.91] span(dA,dB) 0.62
+[23:30:13] [gate2 L8] coupling (dA,0)'H(0,dB) +0.357 vs null |.| median 0.040 max 0.102 (pct 1.00); measured interaction of the real move +5.00; total 740s; alloc 2531 MB, peak 4309 MB
+[23:32:03] [gate2] L6: lie 00 0.03 +A 0.03 +B 0.20 +A+B 0.52 | 10+B 0.59 01+A 0.98 11-A 0.00 11-B 0.17 | AND +0.31
+[23:32:03] [gate2] chosen layer 6 (AND +0.31); 50s
+[23:32:17] [gate2 L6] |rA| 2.392 |rB| 7.614 |dA| 1.95 |dB| 3.05 cos(rA,dA) +0.29 cos(rB,dB) +0.19; random span 0.0049
+[23:34:20] [gate2 L6] H2_raw_00      span(rA,rB) 0.18 [rA 0.00 rB 0.36] span(dA,dB) 0.02
+[23:36:12] [gate2 L6] H2_white_00    span(rA,rB) 0.18 [rA 0.00 rB 0.36] span(dA,dB) 0.00
+[23:39:43] [gate2 L6] H2_raw_all     span(rA,rB) 0.17 [rA 0.02 rB 0.31] span(dA,dB) 0.03
+[23:42:52] [gate2 L6] H2_white_all   span(rA,rB) 0.13 [rA 0.01 rB 0.25] span(dA,dB) 0.00
+[23:42:52] [gate2 L6] meangrad_00    span(rA,rB) 0.36 [rA 0.01 rB 0.71] span(dA,dB) 0.01
+[23:42:53] [gate2 L6] AGOP_00        span(rA,rB) 0.39 [rA 0.01 rB 0.78] span(dA,dB) 0.01
+[23:42:55] [gate2 L6] gradcov_00     span(rA,rB) 0.20 [rA 0.00 rB 0.40] span(dA,dB) 0.01
+[23:42:56] [gate2 L6] PCA_00         span(rA,rB) 0.01 [rA 0.01 rB 0.01] span(dA,dB) 0.10
+[23:42:59] [gate2 L6] AGOP_white_00  span(rA,rB) 0.43 [rA 0.01 rB 0.85] span(dA,dB) 0.00
+[23:46:06] [gate2 L6] Hbc_raw_00     span(rA,rB) 0.30 [rA 0.29 rB 0.52] span(dA,dB) 0.30
+[23:48:13] [gate2 L6] Hbc_white_00   span(rA,rB) 0.47 [rA 0.54 rB 0.67] span(dA,dB) 0.47
+[23:48:13] [gate2 L6] AGOPbc_00      span(rA,rB) 0.51 [rA 0.55 rB 0.87] span(dA,dB) 0.51
+[23:49:39] [gate2 L6] coupling (dA,0)'H(0,dB) +0.290 vs null |.| median 0.035 max 0.075 (pct 1.00); measured interaction of the real move +2.10; total 1106s; alloc 2489 MB, peak 4441 MB
+[23:51:06] [gate2] L4: lie 00 0.03 +A 0.03 +B 0.23 +A+B 0.56 | 10+B 0.72 01+A 0.98 11-A 0.00 11-B 0.06 | AND +0.33
+[23:51:06] [gate2] chosen layer 4 (AND +0.33); 79s
+[23:51:20] [gate2 L4] |rA| 2.032 |rB| 7.041 |dA| 1.55 |dB| 2.69 cos(rA,dA) +0.31 cos(rB,dB) +0.15; random span 0.0049
+[23:54:11] [gate2 L4] H2_raw_00      span(rA,rB) 0.17 [rA 0.00 rB 0.33] span(dA,dB) 0.01
+[23:57:16] [gate2 L4] H2_white_00    span(rA,rB) 0.14 [rA 0.00 rB 0.27] span(dA,dB) 0.00
+[00:00:30] [gate2 L4] H2_raw_all     span(rA,rB) 0.16 [rA 0.01 rB 0.32] span(dA,dB) 0.02
+[00:03:16] [gate2 L4] H2_white_all   span(rA,rB) 0.12 [rA 0.00 rB 0.25] span(dA,dB) 0.00
+[00:03:16] [gate2 L4] meangrad_00    span(rA,rB) 0.33 [rA 0.01 rB 0.65] span(dA,dB) 0.00
+[00:03:18] [gate2 L4] AGOP_00        span(rA,rB) 0.41 [rA 0.01 rB 0.82] span(dA,dB) 0.01
+[00:03:19] [gate2 L4] gradcov_00     span(rA,rB) 0.23 [rA 0.00 rB 0.45] span(dA,dB) 0.01
+[00:03:22] [gate2 L4] PCA_00         span(rA,rB) 0.01 [rA 0.02 rB 0.00] span(dA,dB) 0.07
+[00:03:23] [gate2 L4] AGOP_white_00  span(rA,rB) 0.43 [rA 0.01 rB 0.84] span(dA,dB) 0.00
+[00:07:11] [gate2 L4] Hbc_raw_00     span(rA,rB) 0.21 [rA 0.25 rB 0.34] span(dA,dB) 0.21
+[00:09:31] [gate2 L4] Hbc_white_00   span(rA,rB) 0.19 [rA 0.05 rB 0.17] span(dA,dB) 0.19
+[00:09:31] [gate2 L4] AGOPbc_00      span(rA,rB) 0.48 [rA 0.49 rB 0.88] span(dA,dB) 0.48
+[00:11:06] [gate2 L4] coupling (dA,0)'H(0,dB) +0.073 vs null |.| median 0.012 max 0.051 (pct 1.00); measured interaction of the real move +2.83; total 1279s; alloc 2486 MB, peak 4740 MB
+[13:52:09] [cross L8] 2-slot HVP vs finite differences: rel err 1.12e-04 (|Hv| 4.304)
+[13:54:04] [cross L8] H_AB_raw_00      r_A(left) top1/3/5 0.38/0.39/0.50 | r_B(right) 0.03/0.38/0.52 | d_A 0.01 d_B 0.03 (top3) | s [2.5604, 1.8938, 1.455]
+[13:55:51] [cross L8] H_AB_white_00    r_A(left) top1/3/5 0.27/0.54/0.55 | r_B(right) 0.06/0.16/0.29 | d_A 0.00 d_B 0.01 (top3) | s [0.0143, 0.0098, 0.0072]
+[13:57:55] [cross L8] H_AB_raw_all     r_A(left) top1/3/5 0.06/0.32/0.43 | r_B(right) 0.00/0.16/0.17 | d_A 0.08 d_B 0.05 (top3) | s [6.4228, 4.7716, 3.551]
+[13:57:55] [cross L8] crossAGOP_00     r_A(left) top1/3/5 0.31/0.41/0.45 | r_B(right) 0.80/0.83/0.84 | d_A 0.00 d_B 0.02 (top3) | s [12.1553, 2.3405, 1.1619]
+[13:57:56] [cross L8] crossCov_00      r_A(left) top1/3/5 0.17/0.28/0.33 | r_B(right) 0.32/0.41/0.47 | d_A 0.01 d_B 0.02 (top3) | s [4.8425, 1.8002, 1.1337]
+[13:57:56] [cross L8] crossAGOP_white_00 r_A(left) top1/3/5 0.23/0.35/0.47 | r_B(right) 0.84/0.86/0.87 | d_A 0.00 d_B 0.01 (top3) | s [0.044, 0.0081, 0.0033]
+[13:57:56] [cross L8] done 359s (random top-3 recovery 0.0029); alloc 2505 MB, peak 4286 MB
+[13:58:08] [cross L6] 2-slot HVP vs finite differences: rel err 1.27e-04 (|Hv| 5.582)
+[14:01:02] [cross L6] H_AB_raw_00      r_A(left) top1/3/5 0.45/0.47/0.59 | r_B(right) 0.07/0.40/0.42 | d_A 0.00 d_B 0.03 (top3) | s [2.194, 1.5696, 1.2917]
+[14:02:57] [cross L6] H_AB_white_00    r_A(left) top1/3/5 0.13/0.42/0.51 | r_B(right) 0.01/0.20/0.21 | d_A 0.00 d_B 0.00 (top3) | s [0.0118, 0.0105, 0.0078]
+[14:05:07] [cross L6] H_AB_raw_all     r_A(left) top1/3/5 0.06/0.31/0.55 | r_B(right) 0.07/0.10/0.12 | d_A 0.05 d_B 0.04 (top3) | s [4.9873, 4.1926, 3.1945]
+[14:05:07] [cross L6] crossAGOP_00     r_A(left) top1/3/5 0.27/0.37/0.43 | r_B(right) 0.74/0.76/0.78 | d_A 0.00 d_B 0.01 (top3) | s [10.2601, 2.105, 1.1102]
+[14:05:08] [cross L6] crossCov_00      r_A(left) top1/3/5 0.13/0.27/0.33 | r_B(right) 0.26/0.33/0.38 | d_A 0.01 d_B 0.01 (top3) | s [4.2672, 1.5171, 1.0834]
+[14:05:08] [cross L6] crossAGOP_white_00 r_A(left) top1/3/5 0.17/0.34/0.42 | r_B(right) 0.80/0.81/0.82 | d_A 0.00 d_B 0.00 (top3) | s [0.0437, 0.0083, 0.0039]
+[14:05:08] [cross L6] done 432s (random top-3 recovery 0.0029); alloc 2505 MB, peak 4456 MB
+[14:05:21] [cross L4] 2-slot HVP vs finite differences: rel err 1.50e-04 (|Hv| 5.502)
+[14:07:27] [cross L4] H_AB_raw_00      r_A(left) top1/3/5 0.00/0.24/0.55 | r_B(right) 0.05/0.23/0.44 | d_A 0.01 d_B 0.00 (top3) | s [1.8853, 1.4982, 1.3553]
+[14:09:33] [cross L4] H_AB_white_00    r_A(left) top1/3/5 0.37/0.47/0.49 | r_B(right) 0.01/0.10/0.15 | d_A 0.00 d_B 0.00 (top3) | s [0.0078, 0.0076, 0.0062]
+[14:11:59] [cross L4] H_AB_raw_all     r_A(left) top1/3/5 0.08/0.12/0.49 | r_B(right) 0.03/0.07/0.11 | d_A 0.02 d_B 0.01 (top3) | s [3.9393, 3.2435, 2.4887]
+[14:12:00] [cross L4] crossAGOP_00     r_A(left) top1/3/5 0.24/0.33/0.34 | r_B(right) 0.70/0.79/0.79 | d_A 0.02 d_B 0.01 (top3) | s [7.0053, 1.7853, 1.2349]
+[14:12:00] [cross L4] crossCov_00      r_A(left) top1/3/5 0.11/0.23/0.25 | r_B(right) 0.19/0.28/0.32 | d_A 0.03 d_B 0.01 (top3) | s [3.2975, 1.2719, 1.2127]
+[14:12:01] [cross L4] crossAGOP_white_00 r_A(left) top1/3/5 0.29/0.37/0.38 | r_B(right) 0.76/0.85/0.86 | d_A 0.01 d_B 0.00 (top3) | s [0.025, 0.0064, 0.0043]
+[14:12:01] [cross L4] done 412s (random top-3 recovery 0.0029); alloc 2505 MB, peak 4753 MB
+[14:12:01] [cross] all done 1257s
