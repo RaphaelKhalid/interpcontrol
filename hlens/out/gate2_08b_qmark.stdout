@@ -1,0 +1,10 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<00:55,  5.72it/s]Loading weights:  25%|##5       | 81/320 [00:00<00:00, 361.03it/s]Loading weights:  52%|#####2    | 168/320 [00:00<00:00, 555.77it/s]Loading weights:  79%|#######9  | 253/320 [00:00<00:00, 655.25it/s]Loading weights: 100%|##########| 320/320 [00:00<00:00, 576.69it/s]
+[23:12:12] [gate2] L2: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.97 11-A 0.00 11-B 0.98 | AND +0.00
+[23:12:18] [gate2] L4: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.98 11-A 0.00 11-B 0.98 | AND +0.00
+[23:12:24] [gate2] L6: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.05 01+A 0.98 11-A 0.00 11-B 1.00 | AND +0.00
+[23:12:29] [gate2] L8: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.06 | 10+B 0.05 01+A 0.97 11-A 0.00 11-B 0.98 | AND +0.03
+[23:12:33] [gate2] L10: lie 00 0.03 +A 0.03 +B 0.02 +A+B 0.09 | 10+B 0.05 01+A 0.91 11-A 0.98 11-B 1.00 | AND +0.06
+[23:12:37] [gate2] L12: lie 00 0.03 +A 0.03 +B 0.02 +A+B 0.02 | 10+B 0.05 01+A 0.02 11-A 0.98 11-B 1.00 | AND -0.02
+[23:12:41] [gate2] L14: lie 00 0.03 +A 0.03 +B 0.03 +A+B 0.03 | 10+B 0.03 01+A 0.02 11-A 0.98 11-B 0.98 | AND +0.00
+[23:12:41] [gate2] PRECONDITION FAILED (best AND +0.06 at L10); no analysis
