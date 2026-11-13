@@ -1,6 +1,6 @@
 # H-lens pilot: results (Qwen3.5-0.8B, laptop, Oct 4 2026)
 
-Spec: `interpcontrol/PROPOSAL-hlens.md`. Everything ran locally on the RTX 4060 Laptop (8 GB). $0 spent: no pods, no paid APIs, nothing pushed. Wall time for the whole pilot was about 2 h (20:27 to 22:30, including one session crash at ~20:45). Terse log: `runlog.md`.
+Spec: `PROPOSAL-hlens.md`, removed from this repository on 2026-11-13. It remains in the git history. Everything ran locally on the RTX 4060 Laptop (8 GB). $0 spent: no pods, no paid APIs, nothing pushed. Wall time for the whole pilot was about 2 h (20:27 to 22:30, including one session crash at ~20:45). Terse log: `runlog.md`.
 
 ## Headline
 
