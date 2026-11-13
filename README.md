@@ -59,7 +59,7 @@ The 27B follow-up lives in [RaphaelKhalid/hspace](https://github.com/RaphaelKhal
 | `em/results/` | result write-ups and checksums (raw outputs are in a hashed tarball, not committed) |
 | `hlens/` | H-lens code, preregistered scopes, results and raw outputs (`hlens/out/`) |
 | `dash/` | local live dashboard for watching runs (`python dash/server.py 8796`) |
-| `PROPOSAL-*.md`, `BRIEF-experiment.md`, `REVIEW-critiques.md` | earlier design docs, including the original APPS version |
+| `BRIEF-experiment.md` | the earlier design brief |
 
 ## Reproducing
 
